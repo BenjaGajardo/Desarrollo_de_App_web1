@@ -1,0 +1,189 @@
+/* Archivo: style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Estilos del login */
+.login-box {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 170px;
+    margin-bottom: 20px;
+    margin-right: 500px;
+}
+
+h2 {
+    color: #000;
+    font-size: 22px;
+    text-align: center;
+}
+
+span {
+    color: #00bfa5;
+    font-weight: bold;
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.password-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.forgot {
+    color: #6200ea;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #00bfa5;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.fingerprint {
+    background-color: white;
+    border: 2px solid #00bfa5;
+    color: #00bfa5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.fingerprint span {
+    margin-left: 10px;
+}
+
+.volver {
+    display: block;
+    margin-top: 20px;
+    color: #00bfa5;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 500px;
+}
+
+/* Estilos de la parte derecha o información */
+.info-box {
+    width: 70%;
+    background: linear-gradient(135deg, #00bfa5, #009688);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.info-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.info-box p {
+    font-size: 16px;
+    max-width: 500px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.info-box img{
+    margin: 20px;
+}
+
+.btn-info {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 12px;
+    color: #009688;
+    border: none;
+    border-radius: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 240px;
+}
+
+.imagen1{
+    margin-top: -200px;
+    margin-left: 70px;
+    transform: translateY(90px);
+    transform: scale(0.7); /* Reduce al 70% */
+    position: relative;
+    top: 150px;
+}
+
+.imagen2{
+    margin-right: 320px;
+    transform: scale(0.9); /* 90% del tamaño original */
+    position: relative;
+    top: 80px;
+}
+
+.imagen3{
+    transform: scale(0.9); /* 90% del tamaño original */
+    position: relative;
+    top: 30px;
+    margin-left: 40PX;
+}
+
