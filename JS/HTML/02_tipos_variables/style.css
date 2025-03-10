@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+li{
+    margin: 0 15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a:hover{
+    color: rgba(28,81,255,0.415);
+}
+
+.operaciones{
+    padding: 50px;
+}
+
+button{
+    cursor: pointer;
+    background-color: brown;
+    padding: 10px;
+}
