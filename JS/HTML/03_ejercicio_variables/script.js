@@ -1,3 +1,4 @@
+console.log("todo bien");
 //creacion de variables 
 const rut = 224443366
 let numero = 0; //numerico
@@ -33,7 +34,7 @@ function elements(){
 }
 
 function matriz_(){
-    alert(matriz)
+    alert("Matriz is: \n" + matriz)
 }
 
 function object(){
