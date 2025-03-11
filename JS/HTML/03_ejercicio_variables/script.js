@@ -32,7 +32,7 @@ function elements(){
     alert(array)
 }
 
-function list(){
+function matriz_(){
     alert(matriz)
 }
 
@@ -44,5 +44,8 @@ function M_nulo(){
     alert(nulo)
 }
 
+function indefinido_(){
+    alert(indefinido)
+}
 
 
