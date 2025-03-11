@@ -29,11 +29,14 @@ a:hover{
 }
 
 .operaciones{
-    padding: 50px;
+    padding: 150px;
+    
 }
 
 button{
     cursor: pointer;
-    background-color: brown;
+    background-color: orange;
     padding: 10px;
+    border-radius: 45%;
+    margin: 35px;
 }
