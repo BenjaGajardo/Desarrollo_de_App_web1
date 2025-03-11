@@ -24,7 +24,7 @@ function bool(){
     alert(booleano)
 }
 
-function float_num(){
+function INT(){
     alert(numero)
 }
 
