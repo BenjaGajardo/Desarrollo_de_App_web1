@@ -2,21 +2,21 @@ console.log("Vinculado correctamente...")
 // Ejercicio 1: Declaración de variables
 // Instrucciones: Declara dos variables numéricas llamadas 'ahora' y 'fecha_nac'.
 // Luego, calcula y muestra en un mensaje la edad actual basada en el año de nacimiento.
-let ahora = 2025;
-let fecha_nac = 2007;
-
 function declararVariables() {
     // Tu código aquí
+    let ahora = parseInt(prompt ("Ingrese Año actual: ")); // parseInt transforma a string a number // prompt solicita que ingreses un valor y pide ingresar un texto 
+    let fecha_nac = parseInt(prompt("Ingrese fecha de nacimiento: "));
     resultado = ahora - fecha_nac;
     alert("edad: " + resultado)
     }
     
     // Ejercicio 2: Asignación de valores
     // Instrucciones: Completa la función para asignar el valor de 'var1' a 'var2' y luego muestra el valor de 'var2'.
-    let hola1 = hola2
     function asignarValores() {
     // Tu código aquí
-    alert(hola1)
+    let var1 = prompt("Ingrese un valor: ");
+    let var2= var1;
+    alert("El valor de var2 es igual a var1\n" + "var1:" + var1 + "\nvar2:" + var2);
     }
     
     // Ejercicio 3: Operaciones matemáticas
@@ -24,8 +24,14 @@ function declararVariables() {
     // Suma 'num1','num2' y 'num3', resta 'num1' de 'num3', multiplica 'num2' por 'num3', y divide 'num1' entre '120'.
     // Muestra los resultados en un mensaje.
     function realizarOperaciones() {
-    
-    alert( );
+    let num1 = parseInt(prompt("ingrese primer numero: "));
+    let num2 = parseInt(prompt ("ingrese segundo numero: "));
+    let num3 = parseInt(prompt ("ingrese tercer numero: "));
+    let suma = num1 + num2 + num3;
+    let resta = num1 - num3;
+    let multiplicacion = num2 * num3;
+    let division = num1 / 120;
+    alert("Resultado suma: " + suma + "\nResultado resta: " + resta + "\nResultado multiplicacion: " + multiplicacion + "\nResultado division: " + division);
     
     // Tu código aquí
     }
@@ -34,6 +40,9 @@ function declararVariables() {
     // Instrucciones: Completa la función para construir un mensaje utilizando las variables 'direccion' y 'n_casa'.
     // Luego, muestra la longitud del mensaje y el antepenultimo en el mensaje. (.length)
     function manipularCadenas() {
- 
     // Tu código aquí
+    let direccion = prompt("Ingrese su direccion");
+    let n_casa = prompt("Ingrese numero de casa");
+    let resultado = "Direccion: " + direccion + "\nNumero de casa: " + n_casa
+    alert("La direccion es: " + resultado + "\n" + "Logintud de caracteres: " + resultado.length + "\n" + "caracter antepenultimo: " + resultado[resultado.length-3]);
     }
