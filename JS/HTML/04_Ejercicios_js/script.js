@@ -42,7 +42,11 @@ function declararVariables() {
     function manipularCadenas() {
     // Tu código aquí
     let direccion = prompt("Ingrese su direccion");
-    let n_casa = prompt("Ingrese numero de casa");
-    let resultado = "Direccion: " + direccion + "\nNumero de casa: " + n_casa
-    alert("La direccion es: " + resultado + "\n" + "Logintud de caracteres: " + resultado.length + "\n" + "caracter antepenultimo: " + resultado[resultado.length-3]);
-    }
+    let n_casa = parseInt(prompt("Ingrese numero de casa"));
+    let cadena = direccion +" " + n_casa;
+    let longitud = cadena.length;
+    let antepenultimo = cadena[cadena.length-3];
+    alert("La direccion es: " ${cadena} 
+    \nTu numero de casa es: ${casa}
+    \nLargo de cadena: ${logitud}
+    \nCaracter Antepenultimo: ${antepenultimo}`);
