@@ -40,13 +40,14 @@ function declararVariables() {
     // Instrucciones: Completa la función para construir un mensaje utilizando las variables 'direccion' y 'n_casa'.
     // Luego, muestra la longitud del mensaje y el antepenultimo en el mensaje. (.length)
     function manipularCadenas() {
-    // Tu código aquí
-    let direccion = prompt("Ingrese su direccion");
-    let n_casa = parseInt(prompt("Ingrese numero de casa"));
-    let cadena = direccion +" " + n_casa;
-    let longitud = cadena.length;
-    let antepenultimo = cadena[cadena.length-3];
-    alert("La direccion es: " ${cadena} 
-    \nTu numero de casa es: ${casa}
-    \nLargo de cadena: ${logitud}
-    \nCaracter Antepenultimo: ${antepenultimo}`);
+        let direccion = prompt("Ingrese su dirección: ");
+        let n_casa = prompt("Ingrese número de casa: "); // Lo dejamos como cadena
+        let cadena = direccion + " " + n_casa;
+        let longitud = cadena.length;
+        let antepenultimo = cadena.charAt(cadena.length - 3);
+        alert(`La dirección es: ${cadena}
+        \nTu número de casa es: ${n_casa}
+        \nLargo de la cadena: ${longitud}
+        \nCaracter antepenúltimo: ${antepenultimo}`);
+    }
+    
