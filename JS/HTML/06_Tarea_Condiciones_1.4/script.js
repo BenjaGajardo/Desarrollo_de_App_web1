@@ -1,7 +1,7 @@
 function _Temperatura(){
     let temperatura = prompt("Ingrese la temperatura: ")
     if (temperatura <= 0) {
-        alert("Hace frío.");
+        alert("Hace frío.")
     } else if (temperatura >= 0 && temperatura <= 25){
         alert("La temperatura es agradable.")
     } else  {
