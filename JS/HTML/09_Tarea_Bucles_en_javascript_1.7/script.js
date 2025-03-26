@@ -6,12 +6,24 @@ function _Contador(){
     }
 }
 
-function _Numero(){
+//Ejercicio hecho
+function _ContadoRR(){
     let contador = 10;
     while (contador >= 1){
         alert(contador);
         contador--;
     }
+}
+
+//Ejercicio de ejemplo
+function _Numero(){
+    let contador = 10;
+    let array = []; // crea una lista vacia 
+    while (contador >= 1){
+        array.push(contador); //inserta datos en este caso la lista(array)
+        contador--;
+    }
+    alert(`Los numeros son: ${array.join(" - ")}`); // join es para colocar entre la lista en este caso " - "
 }
 
 function _Numeros(){
