@@ -1,6 +1,6 @@
 function _Contador(){
     let contador = 1;
-    while (contador <= 10){
+    while (contador <= 5){
         alert(contador);
         contador++;
     }
