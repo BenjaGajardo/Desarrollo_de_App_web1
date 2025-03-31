@@ -1,13 +1,14 @@
 function contarNumeros(){
-    let n = parseInt(prompt("Ingrese un numero entero: "))
-    let count = 1;
-    let array = [];
-    while (count <= n){
-        array.push(count);//Insertar un valor al final del array
-        count++//incrementa 1 al contador
-    }
-    alert(`Contando: ${array.join(" - ")}`);
+let n = parseInt(prompt("Ingrese un número:"));
+let count = 1
+let array = []
+while (count <= n){
+    array.push(count)
+    count++;
 }
+alert(`los números son: ${array.join(" - ")}`)
+}
+
 
 function _numero(){
     let n = parseInt(prompt("Ingrese un numero: "));
@@ -39,11 +40,7 @@ function _multiplos(){
     alert(`Los multiplos son: ${array.join(" - ")}`)
 }
 
-function _Multiplo(){
-    for (let i = 2; i<= 10; i += 2){
-        alert(i)
-    }
-}
+
 
 
 
@@ -91,4 +88,10 @@ function _Numeros(){
     for (let i = 1; i<= 5; i++){
         suma += i; 
     } alert("Esta es la suma de los 5 digitos: " + suma)
+}
+
+function _Multiplo(){
+    for (let i = 2; i<= 10; i += 2){
+        alert(i)
+    }
 }
