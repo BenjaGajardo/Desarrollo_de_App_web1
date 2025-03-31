@@ -63,10 +63,3 @@ function bucleFor(){
     alert(`Los numeros son: ${array.join(" - ")}`)
 }
 
-//Ejemplo
-function _Numeros(){
-    let suma = 0
-    for (let i = 1; i<= 5; i++){
-        suma += i; 
-    } alert("Esta es la suma de los 5 digitos: " + suma)
-}
