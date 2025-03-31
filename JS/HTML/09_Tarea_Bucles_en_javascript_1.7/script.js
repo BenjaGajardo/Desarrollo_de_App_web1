@@ -45,7 +45,7 @@ function _Contador(){
     }
 }
 
-//Ejercicio hecho
+//Ejemplo 
 function _ContadoRR(){
     let contador = 10;
     while (contador >= 1){
@@ -54,7 +54,7 @@ function _ContadoRR(){
     }
 }
 
-//Ejemplo de ejercicio 2 
+//Ejemplook
 function bucleFor(){
     let array = [];
     for (i = 10; i >= 1; i-- ){
