@@ -6,6 +6,35 @@ function _Contador(){
     }
 }
 
+function _Numeros(){
+    let suma = 0
+    for (let i = 1; i<= 5; i++){
+        suma += i; 
+    } alert("Esta es la suma de los 5 digitos: " + suma)
+}
+
+function _Multiplo(){
+    for (let i = 2; i<= 10; i += 2){
+        alert(i)
+    }
+}
+
+
+
+
+
+
+
+//Ejercicio de ejemplo 4
+function _NumerosS(){
+    let suma = 0
+    let array = []
+    for (let i = 1; i<= 5; i++){
+        suma += i; 
+        array.push 
+    } alert(`Contando: ${array.join(" - ")}`);
+}
+
 //Ejercicio hecho
 function _ContadoRR(){
     let contador = 10;
@@ -27,7 +56,6 @@ function contarNumeros(){
     alert(`Contando: ${array.join(" - ")}`);
 }
 
-
 //Ejemplo de ejercicio 2 
 function bucleFor(){
     let array = [];
@@ -46,17 +74,4 @@ function _Numero(){
         contador--;
     }
     alert(`Los numeros son: ${array.join(" - ")}`); // join es para colocar entre la lista en este caso " - "
-}
-
-function _Numeros(){
-    let suma = 0
-    for (let i = 1; i<= 5; i++){
-        suma += i; 
-    } alert("Esta es la suma de los 5 digitos: " + suma)
-}
-
-function _Multiplo(){
-    for (let i = 2; i<= 10; i += 2){
-        alert(i)
-    }
 }
