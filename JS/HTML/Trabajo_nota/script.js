@@ -1,6 +1,6 @@
 function _pares(){
     let array = []
-    for (i = 0; i < 101; i += 2){
+    for (i = 2; i < 201; i += 2){
         array.push(i)
-    }alert(`Los numeros pares son: ${array.join(" - ")}`)
+    }alert(`Los primeros 100 numeros pares son:  ${array.join(" - ")}`)
 }
