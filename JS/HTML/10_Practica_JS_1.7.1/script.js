@@ -29,4 +29,4 @@ function _pares(){
         array.push(i)
     }
     alert(`Los multiplos son: ${array.join(" - ")}`)
-}
+} 
