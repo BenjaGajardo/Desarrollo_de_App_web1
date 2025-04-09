@@ -52,5 +52,30 @@ function _SumaN(){
 function _Suma2N(){
     let num1 = parseInt(prompt("Ingrese primer numero: "))
     let num2 = parseInt(prompt("Ingrese segundo numero: "))
-    
+    let pregunta = prompt("¿Desea sumar, restar, multiplicar y dividir? presione los simbolos de cada ejercicio: + , - , * , /")
+    let resultado = 0;
+    if (pregunta === "+"){
+        resultado = num1 + num2;
+    } else if (pregunta === "-"){
+        resultado = num1 - num2; 
+    } else if (pregunta === "*"){
+        resultado = num1 * num2;
+    } else if (pregunta === "/"){
+        resultado = num1 / num2;
+    } alert ("Resultado: " + resultado)
+}
+
+function _SumaPares(){
+    let suma = 0;
+    let count = parseInt(prompt("Cuantos numeros pares quieres sumar: "))
+    for(let i = 1; i <= pares ; i++){
+        let n = parseInt(prompt(`ingrese el numeo par numero ${i}`))
+        if (i % 2 !== 0);{
+            alert("Ese no es un numero par");
+            i--;
+        } else {
+            suma += i;
+        }
+    } 
+    alert("La suma de los numeros pares es: " + suma)
 }
