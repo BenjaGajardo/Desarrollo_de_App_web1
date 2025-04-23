@@ -1,12 +1,12 @@
 function _Suma(){
-    let n = parseInt(prompt("Ingrese la cantidad de numeros naturales a sumar: "))
+    let n = parseInt(prompt("Ingrese la cantidad de números naturales a sumar: "))
     let suma = 0;
     let array = []
     for(let i = 1; i <= n; i++){
         suma += i;
         array.push(i)
     } 
-    alert(`Numeros sumados : ${array.join(" - ")}\nSuma de los numeros: ` + suma)
+    alert(`Números sumados : ${array.join(" - ")}\nSuma de los números: ` + suma)
 }
 
 function _Pares(){
@@ -16,7 +16,7 @@ function _Pares(){
             array.push(i)
         }
     }
-    alert(`Los primeros 100 numeros pares son:  ${array.join(" - ")}`)
+    alert(`Los primeros 100 números pares son:  ${array.join(" - ")}`)
 }
 
 function _Impares(){
@@ -27,26 +27,30 @@ function _Impares(){
         numero += suma;
         array.push(numero)
     }
-    alert(`Los 100 primeros numeros impares son: ${array.join(" - ")}`)
+    alert(`Los 100 primeros números impares son: ${array.join(" - ")}`)
 }
 
 function _SumaNumeros(){
+let array = []
 let suma = 0;
     for(let i = 1; i <= 5; i++){
-        let n = parseInt(prompt(`Ingresa el ${i} numero`))
+        let n = parseInt(prompt(`Ingresa el ${i} número`))
         suma += n; 
+        array.push(i)
     }
-    alert("la suma de los 5 numeros son: "+ suma)
+    alert(`La suma de los 5 números:\n(${array.join(" + ")})\nEs: ${suma}` )
 }
 
 function _SumaN(){
     let numero = parseInt(prompt("Ingrese cuantos numeros desea sumar: "))
     let suma = 0;
+    let array = []
         for(let i = 1; i <= numero; i++){
-            let n = parseInt(prompt(`Ingresa el ${i} numero`))
+            n = parseInt(prompt(`Ingresa el número ${i} de ${n} `))
+            array.push(n);
             suma += n; 
         }
-        alert("la suma de los 5 numeros son: "+ suma)
+        alert(`La suma de los ${n} numeros:\n(${array.join(" + ")})\nEs: ${suma}`)
     }
 
 function _Suma2N(){
@@ -67,15 +71,26 @@ function _Suma2N(){
 
 function _SumaPares(){
     let suma = 0;
-    let count = parseInt(prompt("Cuantos numeros pares quieres sumar: "))
-    for(let i = 1; i <= pares ; i++){
-        let n = parseInt(prompt(`ingrese el numeo par numero ${i}`))
-        if (i % 2 !== 0);{
+    let count = parseInt(prompt("Cuantos números pares quieres sumar: "))
+    for(let i = 1; i <= count ; i++){
+        let n = parseInt(prompt(`Ingrese el número par numero ${i}`))
+        if (n % 2 !== 0) {
             alert("Ese no es un numero par");
             i--;
-        } else {
+        } else {   
             suma += i;
         }
     } 
     alert("La suma de los numeros pares es: " + suma)
 }
+
+
+function _PrimerosPares(){
+    let suma = 0;
+    let condicion = parseInt(prompt("Ingrese cuantos numeros pares desea sumar: "))
+    for(let i = 2; i <= condicion; i++){
+        (i % 2 === 0); 
+            array.push(i)
+    }suma += i;
+    alert("La suma de los numeros pares son: " + suma)
+} 
