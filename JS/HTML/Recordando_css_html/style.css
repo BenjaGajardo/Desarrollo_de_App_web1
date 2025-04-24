@@ -1,8 +1,8 @@
-
+/*
 * {
     outline: solid black 1px;
 }
-
+*/
 
 * {
     margin: 0;
@@ -42,7 +42,7 @@ ul{
 }
 
 .btn{
-    background-color: #00bcd4;
+    background-color: #3798dc;
     color: #fff;
     border-radius: 5px;
     padding: 10px;
@@ -72,10 +72,11 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     background-color: white;
+    border: none;
 }
 
 .card-header {
-    background-color: #0097a7;
+    background-color: #3798dc;
     height: 90px;
 }
 
@@ -85,15 +86,15 @@ body {
 }
 
 .user-icon img {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     background-color: #ccc;
     margin-bottom: 10px;
     position: absolute;
     top: 30px;
-    margin-top: 210px;
-    margin-left: -40px;
+    margin-top: 5px;
+    margin-left: -50px;
 }
 
 h2 {
@@ -101,9 +102,9 @@ h2 {
     font-size: 22px;
 }
 
-.location-icon {
-    width: 15px;
-    vertical-align: middle;
+.p-negro{
+    margin: 5px 0;
+    color: #000;
 }
 
 p {
@@ -165,6 +166,19 @@ img{
     justify-content: space-around;
     display: flex;
 }
+
+.boton-todas{
+    background-color: #3798dc;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: #000;
+    cursor: pointer;
+    margin-left: 40px;
+    width: 150px;
+    margin-top: 20px;
+}
+
 .conection-header{
     background-color: #333;
     color: #fff;
@@ -189,7 +203,9 @@ img{
 }
 
 .container1{
-    margin-right: 60px;
+    margin-right: 230px;
+    transform: scale(1.3); /* agranda todo al 120% */
+    transform-origin: top left;
 }
 
 .view-more a{
@@ -199,6 +215,19 @@ img{
 
 .your-conection-container{
 margin-top: 40px;
+margin-bottom: 10px;
+}
+
+.boton-todas2{
+    background-color: #3798dc;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: #000;
+    cursor: pointer;
+    margin-left: 40px;
+    width: 120px;
+    margin-top: 20px;
 }
 
 .your-conection{
@@ -208,6 +237,7 @@ margin-top: 40px;
 .connection{
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
 }
 
 .your-conection-container{
@@ -215,15 +245,7 @@ margin-top: 40px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.amount{
-    background-color: #cccccc;
-    color: black;
-    margin-right: 10px;
-    padding-inline: 12px;
-    padding-bottom: 1px;
-    border-radius: 50%;
-    text-align: center;
-}
+
 
 .conection-header, .your-conection-header{
     display: flex;
@@ -239,6 +261,9 @@ margin-top: 40px;
 .row{
     display: flex;
     margin-left: 10px;
+    border-radius: 100%;
+    height: auto;
+    width: 40px;
 }
 
 .row p{
