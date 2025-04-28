@@ -147,11 +147,10 @@ p {
 }
 
 .father{
-    margin: 0 auto;
+    flex: 1;
     align-items: center;
-    justify-content: space-between;
-    display: flex;
-
+    justify-content: space-around;
+    display: flex ;
 }
 
 img{
@@ -183,8 +182,8 @@ img{
 
 .conection-header{
     display: flex;
-    justify-content: center;  /* Centra el contenido horizontalmente */
-    align-items: center;      /* Centra el contenido verticalmente */
+    justify-content: center;  
+    align-items: center;      
 }
 
 .your-conection p{
@@ -200,8 +199,8 @@ img{
     padding: 20px;
     text-align: left;
     display: flex;
-    justify-content: center;  /* Centra el contenido horizontalmente */
-    align-items: center;      /* Centra el contenido verticalmente */
+    justify-content: center;  
+    align-items: center;      
 }
 
 .container1{
