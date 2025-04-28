@@ -1,8 +1,8 @@
-/*
+
 * {
     outline: solid black 1px;
 }
-*/
+
 
 * {
     margin: 0;
@@ -14,10 +14,10 @@ header {
     background-color: #f0f0f0;
 }
 
-.nav {
+.nav{
     background-color: #333;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 0px 20px;
     color: #fff;
     position: fixed;
@@ -48,7 +48,6 @@ ul{
     padding: 10px;
     box-shadow: #000;
     cursor: pointer;
-    margin-left: 550px;
 }
 
 .nav-title{
@@ -67,7 +66,6 @@ body {
 .card {
     width: 550px;
     min-height: 100px;
-    border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -168,22 +166,25 @@ img{
 }
 
 .boton-todas{
-    background-color: #3798dc;
-    color: #fff;
+    background-color: #fff;
+    color: #3798dc;
     border-radius: 5px;
     padding: 5px;
     box-shadow: #000;
     cursor: pointer;
-    margin-left: 40px;
-    width: 150px;
-    margin-top: 20px;
+    width: 120px;
+    border: 3px solid #3798dc;
+}
+
+.boton-todas:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .conection-header{
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: left;
+    display: flex;
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    align-items: center;      /* Centra el contenido verticalmente */
 }
 
 .your-conection p{
@@ -196,15 +197,16 @@ img{
 }
 
 .your-conection-header{
-    background-color: #333;
-    color: #fff;
     padding: 20px;
     text-align: left;
+    display: flex;
+    justify-content: center;  /* Centra el contenido horizontalmente */
+    align-items: center;      /* Centra el contenido verticalmente */
 }
 
 .container1{
     margin-right: 230px;
-    transform: scale(1.3); /* agranda todo al 120% */
+    transform: scale(1.3); 
     transform-origin: top left;
 }
 
@@ -214,20 +216,22 @@ img{
 }
 
 .your-conection-container{
-margin-top: 40px;
-margin-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-radius: 20px;
 }
 
 .boton-todas2{
-    background-color: #3798dc;
-    color: #fff;
+    background-color: #fff;
+    color: #3798dc;
     border-radius: 5px;
     padding: 5px;
     box-shadow: #000;
     cursor: pointer;
     margin-left: 40px;
-    width: 120px;
+    width: 100px;
     margin-top: 20px;
+    border: 3px solid #3798dc;
 }
 
 .your-conection{
@@ -238,6 +242,8 @@ margin-bottom: 10px;
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 70px;
+    border-radius: 25px;
+    width: 350px;
 }
 
 .your-conection-container{
@@ -248,12 +254,8 @@ margin-bottom: 10px;
 
 
 .conection-header, .your-conection-header{
-    display: flex;
-    color: whitesmoke;
-    border: 4px solid;
-    border-color: #ffffff #d3d3d3 #d3d3d3;
+    color: #000;
     border-radius: 5px;
-    background-color: #333333;
     padding-inline: 20px;
     width: 300px;
 }
