@@ -101,7 +101,7 @@ body {
     margin-bottom: 30px;
     position: absolute;
     top: 30px;
-    margin-top: 165px;
+    margin-top: 100px;
     margin-left: -70px;
 }
 
@@ -162,6 +162,7 @@ p {
     align-items: center;
     justify-content: space-around;
     display: flex ;
+    gap: 50px;
 }
 
 img{
@@ -294,3 +295,4 @@ img{
 #foto{
     margin-left: 160px;
 }
+
