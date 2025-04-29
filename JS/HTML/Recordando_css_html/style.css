@@ -23,9 +23,9 @@ header {
     position: fixed;
     top: 0;
     z-index: 1000;
-    width: 100%; /* que ocupe todo el ancho de la pantalla */
-    max-width: 1600px; /* si quieres puedes controlar máximo */
-    margin: auto; /* centrado horizontal */
+    width: 100%; 
+    max-width: 1600px; 
+    margin: auto;
     left: 0;
     right: 0;
 }
@@ -62,12 +62,11 @@ margin-top: 10px;
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    flex-direction: row; /* o column si quieres que todo se apile */
-    justify-content: center; /* cambiar left por center para centrar */
+    flex-direction: row; 
     min-height: 100vh;
     background-color: #f0f0f0;
-    margin-top: 60px; /* (porque tienes navbar fija arriba) */
-    gap: 40px; /* espacio entre columnas (opcional) */
+    margin-top: 60px; 
+    gap: 40px; 
 }
 
 .card {
@@ -219,8 +218,8 @@ img{
 }
 
 .container1 {
-    margin-right: 0; /* evitar desplazamientos raros */
-    transform: none; /* quito el scale para que no deforme */
+    margin-right: 0; 
+    transform: none; 
 }
 
 .view-more a{
@@ -257,8 +256,8 @@ img{
 }
 
 .connection {
-    width: 100%; /* igual, ocupa todo el ancho disponible */
-    max-width: 350px; /* pero no más de 350px */
+    width: 100%; 
+    max-width: 350px; 
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
