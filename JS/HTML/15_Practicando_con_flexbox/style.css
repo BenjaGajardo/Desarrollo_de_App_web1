@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: solid 1px black;
+}
+
+.padre{
+    display: flex;
+    height: 605px;
+}
+
+.izquierdo{
+    flex:1;
+}
+
+.derecho{
+    flex: 1;
+}
+
+.cuadro1{
+    height: 310px;
+    flex: 1;
+    border: solid 3px blue;
+}
+
+.hijo-1{
+
+}
+
+.hijo-2{
+    flex:1;
+    height: 200px;
+}
+
+.box-1{
+    height: 305px;
+    width: 460px;
+    border: solid 3px green;
+}
+
+.box-2 {
+    height: 50px;
+}
+
+.cuadro2{
+    height: 285px;
+    flex: 1;
+    border: solid 3px red;
+}
