@@ -1,49 +1,72 @@
 *{
     padding: 0;
     margin: 0;
-    outline: solid 1px black;
+    box-sizing: border-box;
+        /*outline: solid 1px black;*/
 }
 
 .padre{
     display: flex;
-    height: 605px;
+    height: 600px;
+    display: flex;
 }
 
 .izquierdo{
     flex:1;
+    display: flex;
+    flex-direction: column;
 }
 
 .derecho{
     flex: 1;
 }
 
-.cuadro1{
+.cuadro1 {
+    display: flex; /* ✅ clave para que box-1 y box-2 estén juntos */
     height: 310px;
-    flex: 1;
-    border: solid 3px blue;
-}
-
-.hijo-1{
-
-}
-
-.hijo-2{
-    flex:1;
-    height: 200px;
-}
-
-.box-1{
-    height: 305px;
-    width: 460px;
-    border: solid 3px green;
-}
-
-.box-2 {
-    height: 50px;
+    width: 800px;
+    flex: 2;
+        /*border: solid 3px blue;*/
 }
 
 .cuadro2{
     height: 285px;
     flex: 1;
-    border: solid 3px red;
+        /*border: solid 3px red;*/
 }
+
+.box-1{
+    flex: 1;
+    height: 390px;
+    width: 460px;
+        /*border: solid 3px green;*/
+}
+
+.box-2 {
+    flex: 1;
+    height: 390px;
+    width: 100px;
+        /*border: solid 3px yellow;*/
+}
+
+.hijo-1{
+    height: 260px;
+    background-color: #B3B5B4;
+    margin: 20px;
+}
+
+.hijo-2{
+    height: 80px;
+    background-color:#B3B5B4 ;
+    margin: 20px;
+}
+
+.hijo-3 div{
+    height: 170px;
+    width: 180px;
+    background-color: #B3B5B4;
+    margin: 20px;
+}
+
+
+
