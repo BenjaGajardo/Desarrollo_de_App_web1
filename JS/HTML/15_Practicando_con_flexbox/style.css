@@ -22,7 +22,7 @@
 }
 
 .cuadro1 {
-    display: flex; /* ✅ clave para que box-1 y box-2 estén juntos */
+    display: flex; 
     height: 310px;
     width: 800px;
     flex: 2;
