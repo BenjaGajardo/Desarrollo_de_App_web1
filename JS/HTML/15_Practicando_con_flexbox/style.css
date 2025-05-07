@@ -2,13 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-        /*outline: solid 1px black;*/
+        outline: solid 1px black;
 }
 
 .padre{
     display: flex;
-    height: 600px;
-    display: flex;
+    height: 830px;
+    padding: 50px 250px;
 }
 
 .izquierdo{
@@ -23,16 +23,10 @@
 
 .cuadro1 {
     display: flex; 
-    height: 310px;
-    width: 800px;
-    flex: 2;
-        /*border: solid 3px blue;*/
-}
-
-.cuadro2{
-    height: 285px;
+    height: 450px;
+    width: 700px;
     flex: 1;
-        /*border: solid 3px red;*/
+        /*border: solid 3px blue;*/
 }
 
 .box-1{
@@ -68,5 +62,50 @@
     margin: 20px;
 }
 
+.cuadro2{
+    display: flex;
+    height: 345px;
+    width: 600px;
+    flex: 1;
+    /*border: solid 3px red;*/
+}
+
+.box-3{
+    height: 340px;
+    width: 250px;
+    /*border: solid 3px blue;*/
+    margin: px;
+}
+
+.box-4{
+    flex: 1;
+    height: 340px;
+    width: 320px;
+    /*border: solid 3px magenta;*/
+}
+
+.hijo-4{
+    height: 320px;
+    width: 205px;
+    /*border: solid 1px brown;*/
+    background-color: #B3B5B4;
+    margin: 20px;
+}
+
+.hijo-5 div{
+    height: 150px;
+    width: 280px;
+    /*border: solid 1px green;*/
+    background-color: #B3B5B4;
+    margin: 20px;
+}
+
+.cuadro3{
+    display: flex;
+    height: 450px;
+    width: 700px;
+    flex: 1;
+    /*border: solid 3px red;*/
+}
 
 
