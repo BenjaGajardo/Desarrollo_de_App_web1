@@ -121,19 +121,51 @@
     flex-direction: column;
 }
 
+.hijo-7{
+    background-color: #B3B5B4;
+    flex: 1;
+    margin: 20px;
+}
+
+
 .box-7{
+    display: flex;
+    flex: 1;
+    border: solid 3px green;
+    flex-direction: row-reverse;
+}
+
+.hijo-8{
+    display: flex;
+    border: solid 3px aqua;
+    flex: 1;
+    flex-direction: column;
+}
+
+.hijo-9{
+    flex: 1;
+    background-color: #B3B5B4;
+    margin: 20px;
+}
+
+.sub-hijo{
+    flex: 1;
+    background-color: #B3B5B4;
+    margin: 20px;
+}
+
+.sub-hijo2{
+    flex: 1;
+    background-color: #B3B5B4;
+    margin: 20px;
+}
+
+.box-8{
     display: flex;
     flex: 1;
     border: solid 3px black;
     flex-direction: column;
 }
-
-
-
-
-
-
-
 
 .hijo-10{
     background-color: #B3B5B4;
