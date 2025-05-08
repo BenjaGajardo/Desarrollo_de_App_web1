@@ -104,20 +104,20 @@
     display: flex;
     height: 730px;
     width: 700px;
-    border: solid 3px red;
+    /*border: solid 3px red;*/
 }
 
 .box-5{
     display: flex;
     flex:1;
-    border: solid 3px magenta;
+    /*border: solid 3px magenta;*/
     flex-direction: column;
 }
 
 .box-6{
     display: flex;
     flex:1;
-    border: solid 3px blue;
+    /*border: solid 3px blue;*/
     flex-direction: column;
 }
 
@@ -125,19 +125,20 @@
     background-color: #B3B5B4;
     flex: 1;
     margin: 20px;
+    width: 250px;
 }
-
 
 .box-7{
     display: flex;
     flex: 1;
-    border: solid 3px green;
+    /*border: solid 3px green;*/
     flex-direction: row-reverse;
+    width: 300px;
 }
 
 .hijo-8{
     display: flex;
-    border: solid 3px aqua;
+    /*border: solid 3px aqua;*/
     flex: 1;
     flex-direction: column;
 }
@@ -163,7 +164,7 @@
 .box-8{
     display: flex;
     flex: 1;
-    border: solid 3px black;
+    /*border: solid 3px black;*/
     flex-direction: column;
 }
 
