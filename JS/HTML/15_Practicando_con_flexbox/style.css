@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-        /*outline: solid 1px black;*/
+        outline: solid 1px black;
 }
 
 .padre{
@@ -141,6 +141,7 @@
     /*border: solid 3px aqua;*/
     flex: 1;
     flex-direction: column;
+    width: 320px;
 }
 
 .hijo-9{
@@ -163,7 +164,7 @@
 
 .box-8{
     display: flex;
-    flex: 1;
+    flex: 2;
     /*border: solid 3px black;*/
     flex-direction: column;
 }
@@ -181,3 +182,5 @@
     margin: 20px;
     width: 220px;
 }
+
+
