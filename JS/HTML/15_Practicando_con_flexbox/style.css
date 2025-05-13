@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-        outline: solid 1px black;
+        /*outline: solid 1px black;*/
 }
 
 .padre{
@@ -25,7 +25,7 @@
 .cuadro1 {
     display: flex; 
     height: 450px;
-    width: 700px;
+    width: 600px;
     flex: 1;
         /*border: solid 3px blue;*/
 }
@@ -61,13 +61,15 @@
     width: 180px;
     background-color: #B3B5B4;
     margin: 20px;
+    /*border: solid 3px orangered;*/
+    margin-left: 72px;
 }
 
 .cuadro2{
     display: flex;
     height: 345px;
     width: 600px;
-    flex: 1;
+    flex: 2;
     /*border: solid 3px red;*/
 }
 
@@ -80,7 +82,7 @@
 .box-4{
     flex: 1;
     height: 340px;
-    width: 320px;
+    width: 300px;
     /*border: solid 3px magenta;*/
 }
 
@@ -125,7 +127,7 @@
     background-color: #B3B5B4;
     flex: 1;
     margin: 20px;
-    width: 250px;
+    width: 255px;
 }
 
 .box-7{
