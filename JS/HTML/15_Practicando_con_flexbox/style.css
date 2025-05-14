@@ -31,10 +31,10 @@
 }
 
 .box-1{
-    flex: 1;
+    flex: 2;
     height: 390px;
-    width: 460px;
-        /*border: solid 3px green;*/
+    width: 500px;
+    /*border: solid 3px green;*/
 }
 
 .box-2 {
@@ -48,6 +48,7 @@
     height: 260px;
     background-color: #B3B5B4;
     margin: 20px;
+    /*border: solid 3px blue;*/
 }
 
 .hijo-2{
@@ -58,11 +59,11 @@
 
 .hijo-3 div{
     height: 170px;
-    width: 180px;
+    width: 150px;
     background-color: #B3B5B4;
     margin: 20px;
     /*border: solid 3px orangered;*/
-    margin-left: 72px;
+
 }
 
 .cuadro2{
@@ -94,9 +95,10 @@
     margin: 20px;
 }
 
-.hijo-5 div{
+.hijo-5 .sub-hijo3{
+    flex: 2;
     height: 150px;
-    width: 280px;
+    width: 300px;
     /*border: solid 1px green;*/
     background-color: #B3B5B4;
     margin: 20px;
@@ -111,23 +113,24 @@
 
 .box-5{
     display: flex;
-    flex:1;
-    /*border: solid 3px magenta;*/
+    flex: 1;
     flex-direction: column;
 }
 
 .box-6{
     display: flex;
-    flex:1;
-    /*border: solid 3px blue;*/
+    flex: 1.1;
     flex-direction: column;
+    /*border: solid 3px blue;*/
 }
 
 .hijo-7{
     background-color: #B3B5B4;
     flex: 1;
-    margin: 20px;
-    width: 255px;
+    width: 260px;
+    /*border: solid 3px red;*/
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .box-7{
@@ -149,7 +152,7 @@
 .hijo-9{
     flex: 1;
     background-color: #B3B5B4;
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
 }
 
 .sub-hijo{
@@ -162,6 +165,7 @@
     flex: 1;
     background-color: #B3B5B4;
     margin: 20px;
+    margin-bottom: 0px;
 }
 
 .box-8{
@@ -181,7 +185,7 @@
 .hijo-11{
     background-color: #B3B5B4;
     flex: 3;
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
     width: 220px;
 }
 
