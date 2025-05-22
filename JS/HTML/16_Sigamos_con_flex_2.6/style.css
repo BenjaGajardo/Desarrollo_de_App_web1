@@ -19,7 +19,7 @@
     margin-block: 12px;
 }
 
-/* Encabezado (Box 1) */
+/* Encabezado Box 1 */
 .box-1 {
     flex: 1;
     /*border: solid 1px red;*/
@@ -31,7 +31,7 @@
 
 }
 
-/* Contenedor inferior (Box 2) */
+/* Contenedor inferior Box 2 */
 .box-2 {
     display: flex;
     flex: 5;
