@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+        outline: solid 1px black;*/
+}
+
+.padre{
+    display: flex;
+    height: 805px;
+    border: solid 1px black ;
+    flex-direction: column;
+}
+
+.box-1{
+    flex: 1;
+    border: solid 1px red;
+    background-color: #34495E;
+    text-align: center;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.box-1 h4{
+    padding: 20px;
+}
+
+.box-2{
+    display: flex;
+    flex: 5;
+    border: solid 1px magenta;
+    background-color: #FDF6EC ;
+    flex-direction: column;
+}
+
+.hijo-1{
+    flex: 2;
+    display: flex;
+    border: solid 1px blue;
+    margin: 50px 160px 160px 160px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px 0px  rgba(0, 0, 0, 0.25);
+}
+
+
+.sub-hijo-1{
+    flex: 1;
+    border: solid 1px blue;
+    background-color: #E67E22;
+    border-radius: 8px;
+    margin: 9px;
+}
+
+.hijo-2{
+    display: flex;
+    flex: 1;
+    border: solid 1px red;
+    background-color: #D35400;
+    border-radius: 8px;
+    margin: 9px;
+}
+
+.sub-hijo-2{
+    flex: 1;
+    flex-wrap: wrap;
+    border: solid 1px green;
+}
+
+.sub-hijo-3{
+    flex: 1;
+    flex-wrap: wrap;
+    border: solid 1px blue;
+}
+
+.sub-hijo-4{
+    flex: 1;
+    flex-wrap: wrap;
+    border: solid 1px red;
+}
+
