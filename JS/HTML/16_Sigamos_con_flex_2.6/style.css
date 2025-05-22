@@ -1,94 +1,97 @@
-*{
+/* Estilos globales */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-        outline: solid 1px black;*/
+        /*outline: solid 1px black;*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.padre{
+/* Contenedor principal */
+.padre {
     display: flex;
-    height: 805px;
-    border: solid 1px black ;
+    border: solid 1px black;
     flex-direction: column;
 }
 
-.box-1{
+
+.padre h1, .padre h4 {
+    margin-block: 12px;
+}
+
+/* Encabezado (Box 1) */
+.box-1 {
     flex: 1;
-    border: solid 1px red;
+    /*border: solid 1px red;*/
     background-color: #34495E;
     text-align: center;
     flex-direction: column;
-    padding: 30px;
-    font-size: 20px;
     color: #fff;
+    padding: 60px;
+
 }
 
-.box-1 h4{
-    padding: 20px;
-}
-
-.box-2{
+/* Contenedor inferior (Box 2) */
+.box-2 {
     display: flex;
     flex: 5;
-    border: solid 1px magenta;
-    background-color: #FDF6EC ;
+    /*border: solid 1px magenta;*/
+    background-color: #FDF6EC;
     flex-direction: column;
 }
 
-.hijo-1{
+/* Contenedor hijo principal */
+.hijo-1 {
     flex: 2;
     display: flex;
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     margin: 50px 160px 160px 160px;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 5px 15px 0px  rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
-
-.sub-hijo-1{
+/* Subcontenedor superior */
+.sub-hijo-1 {
     flex: 1;
-    border: solid 1px blue;
+    /*border: solid 1px blue;*/
     background-color: #E67E22;
     border-radius: 8px;
-    margin: 9px;
     text-align: center;
     color: #fff;
+    padding: 50px;
+    margin: 9px;
 }
 
-.hijo-2{
+/* Contenedor hijo secundario */
+.hijo-2 {
     display: flex;
+    /*border: solid 1px red;*/
+    text-align: center;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+/* Subcontenedores individuales 2, 3 y 4 */
+.sub-hijo-2, .sub-hijo-3, .sub-hijo-4 {
     flex: 1;
-    border: solid 1px red;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin: 8px;
     background-color: #D35400;
     border-radius: 8px;
-    margin: 9px;
 }
 
-.sub-hijo-2{
-    flex: 1;
-    flex-wrap: wrap;
-    border: solid 1px green;
-    text-align: center;
+.sub-hijo-2 {
+    /*border: solid 1px green;*/
 }
 
-.sub-hijo-3{
-    flex: 1;
-    flex-wrap: wrap;
-    border: solid 1px blue;
-    text-align: center;
+.sub-hijo-3 {
+    /*border: solid 1px blue;*/
 }
 
-.sub-hijo-4{
-    flex: 1;
-    flex-wrap: wrap;
-    border: solid 1px red;
-}
-
-.h1, h4{
-    font-size: 20px;
-    text-align: center;
-    color: #fff;
+.sub-hijo-4 {
+    /*border: solid 1px red;*/
 }
