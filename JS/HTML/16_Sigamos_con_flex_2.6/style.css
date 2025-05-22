@@ -20,6 +20,7 @@
     flex-direction: column;
     padding: 30px;
     font-size: 20px;
+    color: #fff;
 }
 
 .box-1 h4{
@@ -53,6 +54,8 @@
     background-color: #E67E22;
     border-radius: 8px;
     margin: 9px;
+    text-align: center;
+    color: #fff;
 }
 
 .hijo-2{
@@ -68,12 +71,14 @@
     flex: 1;
     flex-wrap: wrap;
     border: solid 1px green;
+    text-align: center;
 }
 
 .sub-hijo-3{
     flex: 1;
     flex-wrap: wrap;
     border: solid 1px blue;
+    text-align: center;
 }
 
 .sub-hijo-4{
@@ -82,3 +87,8 @@
     border: solid 1px red;
 }
 
+.h1, h4{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
