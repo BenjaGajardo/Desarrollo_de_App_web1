@@ -84,7 +84,6 @@ function _SumaPares(){
     alert("La suma de los numeros pares es: " + suma)
 }
 
-
 function _PrimerosPares(){
     let suma = 0;
     let condicion = parseInt(prompt("Ingrese cuantos numeros pares desea sumar: "))
