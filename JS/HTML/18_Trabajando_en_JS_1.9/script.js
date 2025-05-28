@@ -1,17 +1,15 @@
-function _participantes(){
+function _participantes() {
     let nombres = "";
-    let array = []
-    let contador = 0;
-    while(nombres !== "salir") {
-        nombres = prompt("ingrese los Nombres (escriba 'salir' para terminar): ")
+    let lista = [];
+    while (nombres !== "salir") {
+        nombres = prompt("Ingrese los nombres (escriba 'salir' para terminar): ");
         if (nombres !== "salir" && nombres !== null) {
-            array.push(nombres);
-            contador++;
+            lista.push(nombres);
         }
     }
-    alert(`Los participantes son: ${array.join (' - ')}`);
-    if (contador > 5) { 
-        alert("Usted supero los 5 integrantes felicidades")
+    alert(`Los participantes son: ${lista.join(' - ')}`);
+    if (lista.length > 5) {
+        alert("¡Usted superó los 5 integrantes, felicidades!");
     }
 }
 
@@ -26,6 +24,5 @@ function _CajaRegistradora(){
         }
     }
 }
-
 
 
