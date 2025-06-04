@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: solid 1px black;
+    outline: solid 1px red;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 
 .contenedor {
     display: flex;
-    height: 100vh;
+    height: 100%;
 }
 
 /* NAV FIJA */
@@ -50,16 +50,11 @@ body {
 }
 
 .contenido {
-    margin-left: 200px;
-    padding: 30px;
-}
-
-/* GALERÍA */
-.sub-galeria {
     display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
-    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 290px;
+    padding: 30px;
 }
 
 .sub-galeria{
@@ -69,16 +64,24 @@ body {
     margin: 25px 50px 25px 50px;
 }
 
-.cont1, .cont2{
+.c_flex{
     width: 100%;
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+}
+.cont7{
+    flex:1;
+}
+.cont8{
+    flex:5;
+    flex-direction: column;
 }
 
 /* TARJETAS */
 .tarjeta {
-    flex: 1 250px; /* base 250px, puede crecer o encoger */
+    flex: 1 250px; 
     width: 100%;
     padding: 35px;
     border-radius: 10px;
@@ -94,7 +97,7 @@ body {
 
 /* Proporciones */
 .grande {
-    flex: 5;
+    flex: 1;
     background-color: #080808;
 }
 
