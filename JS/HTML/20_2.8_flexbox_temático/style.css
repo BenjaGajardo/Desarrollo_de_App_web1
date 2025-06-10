@@ -139,7 +139,7 @@ h1{
 .tarjeta {
     flex: 1 1 250px;
     min-width: 320px;
-    padding: 35px;
+    padding: 40px;
     border-radius: 10px;
     background-color: #fff;
     text-align: center;
