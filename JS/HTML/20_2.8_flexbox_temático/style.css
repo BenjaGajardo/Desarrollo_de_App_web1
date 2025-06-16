@@ -1,89 +1,158 @@
+/* ELEMENTOS QUE AFECTAN A TODA LA PÁGINA */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: solid 1px red;
+    /*outline: solid 1px red;*/
 }
 
+/* ELEMENTOS DEL BODY */
 body {
     font-family: "Courier New", monospace;
-    background-color: #f2f4f8;
-}
-
-.contenedor {
+    background-color: #f4f4f4; /* gris claro */
     display: flex;
+    flex-wrap: wrap;
     height: 100%;
 }
 
-/* NAV FIJA */
+/* NAV DESPLEGABLE */
 .nav {
-    background-color: #37474f;
-    color: white;
-    width: 20%;
-    height: 100vh;
     position: fixed;
-    min-width: 180px;  /* evita que se haga muy pequeño */
-    max-width: 280px;  /* evita que se haga muy grande */
     top: 0;
     left: 0;
-    padding: 20px;
+    width: 60px;
+    height: 100vh;
+    background-color: #1a1a2e;
+    padding: 20px 20px;
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-right: 4px solid #ffcc00;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+    transition: width  0.4s ease;
+}
+
+.nav:hover {
+    width: 20%;
+}
+
+/* Agrupar y alinear bien el logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+
+/* Al hacer hover, permitir mostrar el texto completo */
+.nav:hover .logo {
+    overflow: visible;
+}
+
+.menu-lateral li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    justify-content: center;
+}
+
+/* Mostrar el texto completo al hacer hover */
+.nav:hover .menu-lateral li {
+    overflow: visible;
 }
 
 .nav h2 {
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #ffcc00;
+    margin: 0;
 }
 
 .nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.nav li {
-    margin: 10px 0;
+.nav ul li {
+    background-color: #29304d;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.nav a {
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
+.nav ul li:hover {
+    background-color: #3e4a6b;
 }
 
-.nav a:hover {
-    color: #ffd54f;
-}
-
+/*ÁREA PRINCIPAL DE LA PÁGINA*/
 .area-principal {
+    background-color: #1a1a2e;
     flex: 1;
     padding: 40px 0px;
     display: flex;
     justify-content: center;
 }
 
+/*CONTENIDO DENTRO DEL AREA PRINCIPAL*/
 .contenido {
-    margin-left: 200px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1200px;
 }
 
+/*ELEMENTOS DE LAS 2 GALERIAS*/
 .galeria{
+    border-radius: 15px;
+    padding: 15px 50px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-h1{
-    flex: 1;
+/*COLOR DE LA GALERIA DE BASKET*/
+.basket{
+    background-color: #ffb339;
 }
 
+/*COLOR DE LA GALERIA DE FUTBOL*/
+.fut{
+    background-color: #1B2A4B;
+}
+
+.fut h1{
+    color: #FFFFFF;
+}
+
+/*CONTENIDO DE LAS SUB-GALERIAS*/
 .sub-galeria {
     border-radius: 10px;
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-    margin: 25px 50px;
+    /*margin: 25px 50px;*/
+    flex: 1 1 100%;
+    margin: 25px auto;
+    width: 100%;
 }
 
-
+/*SUB GALERIA DE LOS CELTICS*/
 .celtics{
     display: flex;
     background-color: #058C54;
@@ -91,6 +160,7 @@ h1{
     justify-content: center;
 }
 
+/*SUB GALERIA DE LOS LAKERS*/
 .lakers{
     display: flex;
     background-color: #552583;
@@ -98,7 +168,7 @@ h1{
     justify-content: center;
 }
 
-/* Nuevo */
+/*SUB GALERIA DEL PSG*/
 .psg{
     display: flex;
     background-color: #61040F;
@@ -108,14 +178,16 @@ h1{
     gap: 30px;
 }
 
-/* Nuevo */
+/*SUB GALERIA DEL BARCA*/
 .barca{
     display: flex;
     background-color: #061840;
     justify-content: center;
     border-radius: 30px;
+    flex-wrap: nowrap;
 }
 
+/*CONTENEDORES FLEXIBLES (CONTENEDORES DE LAS TARJETAS)*/
 .c_flex{
     flex-direction: column;
     display: flex;
@@ -123,65 +195,21 @@ h1{
 }
 
 .cont2 {
-    flex-direction: column;
     display: flex;
     width: 100%;
     flex: 1;
 }
 
-.datos_equipos1 {
+.cont3{
+    flex: 5;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 100%;
 }
 
-.tarjeta {
-    flex: 1 1 250px;
-    min-width: 320px;
-    padding: 40px;
-    border-radius: 10px;
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.tarjeta2{
-    flex: 1 1 100px;
-    min-width: 100px;
-    padding: 40px;
-    border-radius: 10px;
-    background-color: #fff;
+.cont4{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    flex: 3;
 }
 
-.tarjeta2:hover{
-    transform: scale(1.05);
-}
-
-.FCB {
-    background-color:#A2214B ;
-}
-
-.FCB2 {
-    background-color: #00529F;
-}
-
-.PSG{
-    background-color:#08083A;
-}
-
-.PSG2{
-    background-color: #AA1501;
-}
-
-/* Nuevo */
 .cont5{
     flex: 2;
     min-width:310px;
@@ -198,31 +226,50 @@ h1{
     transition: transform 0.3s ease;
 }
 
-.img1{
-    width: 70%;
-    height: 200px;
-}
-
-
-.cont7{
-    flex: 4;
-    min-width:310px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.cont8{
-    flex: 2;
+.datos_equipos1 {
     display: flex;
-    min-width: 310px;
-    border-radius: 20px;
+    gap: 30px;
+    width: 100%;
+}
+
+/*CONTENIDO DE LAS TARJETAS*/
+.tarjeta{
+    flex: 1 1 250px;
+    min-width: 100px;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
 
+.tarjeta2{
+    flex: 1 1 250px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+/*ANIMACIÓN DE LAS TARJETAS*/
 .tarjeta:hover{
-    transform: scale(1.05);
+    transform: scale(1.04);
+}
+
+.tarjeta2:hover{
+    transform: scale(1.04);
+}
+
+/*AJUSTES DE TODAS LAS IMAGENES */
+img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
 .imgb1{
@@ -230,6 +277,46 @@ h1{
     height: 155px;
 }
 
+.imgb2{
+    width: 100%;
+    height: 150px;
+}
+
+.imgb3{
+    width: 290px;
+    height: 150px;
+}
+
+.imgb4{
+    width: 90%;
+    height: 80%;
+}
+
+.img1{
+    width: 75%;
+    height: 90%;
+}
+
+.img2{
+    width: 90%;
+    height: 225px;
+    border-radius: 20px;
+}  
+
+.img3{
+    width: 100%;
+    max-width: 750px; 
+    height: auto;
+    border-radius: 20px;
+}
+
+.img4{
+    height: 60%;
+    width: 150px;
+}
+
+
+/* TARJETAS */
 .celt1{
     background-color: #DDE4DD;
 }
@@ -244,29 +331,10 @@ h1{
     background-color: #3C3C3C;
 }
 
-.bold{
-    font-weight: bold;
-}
-
 .celt4{
     font-size: 18px;
     background-color: #A63732;
     color: #F5E6DC;
-}
-
-.imgb2{
-    width: 100%;
-    height: 150px;
-}
-
-.cont3{
-    flex: 5;
-    display: flex;
-}
-
-.cont4{
-    display: flex;
-    flex: 3;
 }
 
 .lak1{
@@ -294,39 +362,39 @@ h1{
     padding: 10px;
 }
 
-.imgb3{
-    width: 290px;
-    height: 150px;
+.FCB {
+    background-color:#A2214B ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.imgb4{
-    width: 90%;
-    height: 80%;
+.FCB2 {
+    background-color: #00529F;
+    flex-direction: column;
 }
 
-img{
-    width: 100px;
-    height: 100px;
+.FCB3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color:#A2214B ;
 }
 
-.img2{
-    width: 90%;
-    height: 225px;
-    border-radius: 20px;
-}  
-
-.img3{
-    width: 100%;
-    max-width: 750px; 
-    height: auto;
-    border-radius: 20px;
+.PSG{
+    background-color:#08083A;
 }
 
-.img4{
-    height: 90%;
-    width: 200px;
+.PSG2{
+    font-size: 15px;
+    background-color: #AA1501;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+/*CONFIGURACIÓN DE LETRAS*/
 .LY, .letrafcb{
     font-weight: bold;
     font-size: 20px;
@@ -337,3 +405,6 @@ img{
     color: #fff;
 }
 
+.bold{
+    font-weight: bold;
+}
