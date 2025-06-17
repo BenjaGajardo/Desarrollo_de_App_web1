@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /*outline: solid 1px red;*/
+    outline: solid 1px red;
 }
 
 /* ELEMENTOS DEL BODY */
@@ -18,7 +18,7 @@ body {
 /* NAV DESPLEGABLE */
 .nav {
     position: fixed;
-    top: 0;
+    top: 0; 
     left: 0;
     width: 60px;
     height: 100vh;
@@ -40,7 +40,6 @@ body {
     width: 20%;
 }
 
-/* Agrupar y alinear bien el logo */
 .logo {
     display: flex;
     align-items: center;
@@ -48,7 +47,6 @@ body {
     overflow: hidden;
 }
 
-/* Al hacer hover, permitir mostrar el texto completo */
 .nav:hover .logo {
     overflow: visible;
 }
@@ -59,10 +57,9 @@ body {
     gap: 10px;
     white-space: nowrap;
     overflow: hidden;
-    justify-content: center;
+    justify-content: start;
 }
 
-/* Mostrar el texto completo al hacer hover */
 .nav:hover .menu-lateral li {
     overflow: visible;
 }
@@ -113,7 +110,7 @@ body {
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 80%;
 }
 
 /*ELEMENTOS DE LAS 2 GALERIAS*/
@@ -146,11 +143,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-    /*margin: 25px 50px;*/
+    margin: 25px 50px;
     flex: 1 1 100%;
     margin: 25px auto;
     width: 100%;
 }
+
 
 /*SUB GALERIA DE LOS CELTICS*/
 .celtics{
@@ -226,6 +224,14 @@ body {
     transition: transform 0.3s ease;
 }
 
+.cont7{
+    flex: 2;
+}
+
+.cont8{
+    flex: 1;
+}
+
 .datos_equipos1 {
     display: flex;
     gap: 30px;
@@ -238,6 +244,7 @@ body {
     min-width: 100px;
     padding: 40px;
     border-radius: 10px;
+    background-color: #fff;
     text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
@@ -408,3 +415,4 @@ img {
 .bold{
     font-weight: bold;
 }
+
