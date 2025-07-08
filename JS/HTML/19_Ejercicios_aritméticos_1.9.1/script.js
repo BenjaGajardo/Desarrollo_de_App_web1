@@ -28,3 +28,5 @@ function _Numeros_ParesImpares() {
     }
     alert(`los numeros pares son: ${pares.join(' - ')}\nlos numeros impares son: ${impares.join(' - ')}`)
 }
+
+
