@@ -93,56 +93,76 @@ function _Pilas_Colas(){
 
 
 //referencia ul
-const resultado = documento.getElementById("resultado");
-
-
-function agregarElementosCompra(){
-    //valor input
-    let elemento = document.getElementById("lista").value;      
+const resultado = document.getElementById("resultado");
+function agregarElementoCompra(){
+    //Valor input
+    let elemento = document.getElementById("lista").value;
     //Crear elemento HTML --> CreateElement
     let item = document.createElement("li");
     item.innerText = elemento; //<li>--InnerText--</li>
     //appendChild inserta valor hijo en Padre
-    //resultado(<ul>(item(<li></li>))</ul>)
+    // resultado(<ul>(item(<li></li>))</ul>)
     resultado.appendChild(item);
 }
 
+
 let carrito = [];
-function mostrarListaCompras(){
+function mostrarListaCompra() {
     const lista = document.getElementById("resultado2");
-    lista.innerHTML = ""; //Limpiar antes de mostrar
+    lista.innerHTML = ""; // Limpiar antes de mostrar la lista
 
-    for (let i = 0; i < carrito.length; i++) { 
+    for (let i = 0; i < carrito.length; i++) {
         const li = document.createElement("li");
-        li.className = "list-group-item d-flex justify-content-between align-items-center mb-2"
-        li.textContent = `- ${carrito[i]}`;
-        lista.appendChild(li); //Agrega el elemento a la lista
+        li.className = "list-group-item d-flex justify-content-between align-item-center-mb-2"
+        li.textContent = `${carrito[i]}`;
+        lista.appendChild(li) // Agrega elementos a la lista
     }
-}
+} 
 
 
-function agregarElemento2(){
+function agregarElemento2() {
     const input = document.getElementById("lista2");
-    const valor = input.value.trim(); //Guarda valor sin espacios extra}
+    const valor = input.value.trim(); // Guarda valor sin espacios extras
 
-    if (valor === " ") return; 
-    carrito.push(valor); //Agrega el valor al final
+    if (valor === "") return;
+    carrito.push(valor); // Agrega valor al final
+    input.value = "";// Limpia el input
+    input.focus(); // Agrega foco hacia el input
 
-
-    input.value = ""; //Limpia el input
-    input.focus(); //Agrega foco hacia el input
-
-    mostrarListaCompras()
+    mostrarListaCompra()
 }
 
-function eliminarUltimoElemento(){
-    if (carrito.lenght > 0) {
-        carrito.pop(); 
+function eliminarUltimoElemento() {
+    if (carrito.length > 0) {
+        carrito.pop();
     }
-    mostrarListaCompras()
+
+    mostrarListaCompra()
 }
 
+let colores = [];
+function agregarElementoColores() {
+    const input = document.getElementById("lista3");
+    const valor = input.value.trim(); // Guarda valor sin espacios extras
 
+    if (valor === "") return;
+    colores.unshift(valor); // Agrega valor al final
+    input.value = "";// Limpia el input
+    input.focus(); // Agrega foco hacia el input
 
+    mostrarListaColores()
+}
 
+let colores = [];
+function mostrarListaColores() {
+    const lista = document.getElementById("resultado3");
+    lista.innerHTML = ""; // Limpiar antes de mostrar la lista
+
+    for (let i = 0; i < colores.length; i++) {
+        const li = document.createElement("li");
+        li.className = "list-group-item d-flex justify-content-between align-item-center-mb-2"
+        li.textContent = `${colores[i]}`;
+        lista.appendChild(li) // Agrega elementos a la lista
+    }
+} 
 
