@@ -449,27 +449,31 @@ function mostrarListaNombres() {
     }
 }
 
-//Ejercicio 9
+//Ejercicio 10
+let cargasGastadas = [];
 let pila = [];
+
 function agregarElementoPilasYColas() {
     const input = document.getElementById("lista10");
     const valor = input.value.trim(); // Guarda valor sin espacios extras
 
     if (valor === "") return;
-    pila.push("- " +valor); // Agrega valor al final
+    pila.push("- " + valor); // Agrega valor al final
     input.value = "";// Limpia el input
     input.focus(); // Agrega foco hacia el input
 
-    mostrarListaPila()  
+    mostrarListaPila();
 }
 
 
 function eliminarUltimoElemento7() {
     if (pila.length > 0) {
-        pila.pop();
+        const eliminado = pila.pop();
+        cargasGastadas.push(eliminado);
     }
 
-    mostrarListaPila()
+    mostrarListaPila();
+    mostrarEliminados3();
 }
 
 
@@ -483,3 +487,117 @@ function mostrarListaPila() {
         lista.appendChild(li);
     }
 }
+
+
+function mostrarEliminados3() {
+    const lista = document.getElementById("eliminado6");
+    lista.innerHTML = "";
+    for (let i = 0; i < cargasGastadas.length; i++) {
+        const li = document.createElement("li");
+        li.className = "list-group-item d-flex justify-content-between align-item-center-mb-2";
+        li.textContent = cargasGastadas[i];
+        lista.appendChild(li);
+    }
+}
+
+let colaNueva = [];
+let clientesAtendidos = [];
+
+function agregarFinal3() {
+    const input = document.getElementById("lista11");
+    const valor = input.value.trim();
+    if (valor === "") return;
+    colaNueva.push("> " + capitalize(valor));
+    input.value = "";
+    input.focus();
+    mostrarClientes();
+}
+
+function eliminarPrimerElemento4() {
+    if (colaNueva.length > 0) {
+        const eliminado = colaNueva.shift();
+        clientesAtendidos.push(eliminado);
+    }
+    mostrarClientes();
+    mostrarEliminados4();
+}
+
+function mostrarClientes() {
+    const lista = document.getElementById("resultado11");
+    lista.innerHTML = "";
+    for (let i = 0; i < colaNueva.length; i++) {
+        const li = document.createElement("li");
+        li.className = "list-group-item d-flex justify-content-between align-item-center-mb-2";
+        li.textContent = `${colaNueva[i]}`;
+        lista.appendChild(li);
+    }
+}
+
+function mostrarEliminados4() {
+    const lista = document.getElementById("eliminado7");
+    lista.innerHTML = "";
+    for (let i = 0; i < clientesAtendidos.length; i++) {
+        const li = document.createElement("li");
+        li.className = "list-group-item d-flex justify-content-between align-item-center-mb-2";
+        li.textContent = clientesAtendidos[i];
+        lista.appendChild(li);
+    }
+}
+
+
+//Ejercicio 11
+let semana = [];
+function agregarFinal4() {
+    const input = document.getElementById("lista12");
+    const valor = input.value.trim();
+    if (valor === "") return;
+    semana.push("- " + valor);
+    input.value = "";
+    input.focus();
+    mostrarListaSemana();
+}
+
+
+function agregarInicio5() {
+    const input = document.getElementById("lista12");
+    const valor = input.value.trim();
+    if (valor === "") return;
+    semana.unshift("- " + valor);
+    input.value = "";
+    input.focus();
+    mostrarListaSemana();
+}
+
+
+function eliminarPrimerElemento5(){
+    if (semana.length > 0) {
+        semana.shift();
+    }
+    mostrarListaSemana();
+}
+
+
+function mostrarListaSemana() {
+    const lista = document.getElementById("resultado12");
+    lista.innerHTML = "";
+    for (let i = 0; i < semana.length; i++) {
+        const li = document.createElement("li");
+        li.className = "list-group-item d-flex justify-content-between align-item-center-mb-2";
+        li.textContent = `${semana[i]}`;
+        lista.appendChild(li);
+    }
+}
+
+
+window.onload = function() {
+    mostrarListaSemana();
+};
+
+
+
+
+
+
+
+
+
