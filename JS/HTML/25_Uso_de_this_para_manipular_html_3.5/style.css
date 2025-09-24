@@ -11,12 +11,14 @@
     flex-direction: column;
     margin-inline: 15%;
     text-align: center;
+    display: flex;
 }
 
 .content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .definitions {
@@ -39,6 +41,7 @@ nav {
     padding-inline: 3em;
     padding-block: 1em;
     margin-right: 25em;
+    flex-wrap: wrap;
 }
 
 #browser {
