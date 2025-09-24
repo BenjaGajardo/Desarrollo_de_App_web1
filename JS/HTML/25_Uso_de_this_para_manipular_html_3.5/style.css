@@ -22,7 +22,7 @@
 .definitions {
     display: flex;
     flex-direction: column;
-    flex: 2;
+    flex: 1;
 }
 
 .add-def {
@@ -38,6 +38,7 @@ nav {
     justify-content: space-between;
     padding-inline: 3em;
     padding-block: 1em;
+    margin-right: 25em;
 }
 
 #browser {
@@ -122,6 +123,7 @@ button {
     width: 13em;
     height: 10em;
     margin-top: 3em;
+    margin-right: 25em;
 }
 
 .card-2 h2 {
