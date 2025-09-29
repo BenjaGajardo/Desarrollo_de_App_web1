@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /*outline: 1px solid black;*/
+    outline: 1px solid black;
     font-family: cursive;
     font-weight: 100;
 }
@@ -9,25 +9,25 @@
 .container {
     display: flex;
     flex-direction: column;
-    margin-inline: 15%;
+    margin-inline: 18%;
     text-align: center;
     display: flex;
 }
 
-.content {
+.contenido {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.definitions {
+.definiciones {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 2;
 }
 
-.add-def {
+.añadir-definicion {
     display: flex;
     flex: 1;
     justify-content: end;
@@ -37,104 +37,126 @@ nav {
     background-color: #CCCCCC;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    padding-inline: 3em;
-    padding-block: 1em;
-    margin-right: 25em;
+    padding-inline: 30px;
+    padding-block: 10px;
     flex-wrap: wrap;
 }
 
-#browser {
-    font-size: 1.2em;
-    margin-block: 0.5em;
+#search {
+    font-size: 17px;
+    margin-block: 8px;
+    padding: 5px;
     border: 2px solid black;
-    width: 24em;
+    border-radius: 3px;
+    width: 50%;
 }
 
 #login {
     background-color: #2B78E4;
     color: #fff;
+    padding: 2px 1px;
+    margin: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    box-shadow: 2px 2px rgba(0, 0, 0, 1);
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 40px;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 20px;
 }
 
 .header {
     display: flex;
     flex: 1;
-    margin: 0.6em;
+    margin: 6px;
     justify-content: space-between;
     align-items: center;
+}
+
+.likes button{
+    background-color: #FFD966;
+    padding: 3px 5px;
+    margin: 10px;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    font-weight: 600;
+    border: 2px solid black;
+    box-shadow: 2px 2px rgba(0, 0, 0, 1);
+    cursor: pointer;
 }
 
 .likes {
     display: flex;
     justify-content: end;
     align-items: center;
-    font-size: 0.9em;
-    margin-top: 1em;
-}
-
-button {
-    background-color: #FFD966;
-    padding: 0.1em 0.5em;
-    margin: 10px;
-    font-size: 1.4em;
-    border: 3px solid black;
-    box-shadow: 0.2em 0.2em rgba(0, 0, 0, 1);
+    font-size: 14px;
+    margin-top: 12px;
 }
 
 .card-1 {
     display: flex;
     flex-direction: row;
-    padding: 2em;
+    padding: 20px;
     border: 5px solid black;
-    width: 35em;
-    height: 12em;
+    border-radius: 3px;
+    width: 80%;
+    height: 30%;
     justify-content: center;
     align-items: center;
-    margin-top: 3em;
+    margin-top: 50px;
+
 }
 
-.word {
+.contenido-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 10em;
+    width: 100px;
+    flex-wrap: wrap;
 }
 
-.definition {
+.definicion {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    padding: 3em;
+    padding: 30px;
 }
 
 .card-2 {
     display: flex;
     flex-direction: column;
-    padding: 2em;
     text-align: start;
-    justify-content: space-between;
+    justify-content: center;
+    align-self: center;
     border: 5px solid black;
-    width: 13em;
-    height: 10em;
-    margin-top: 3em;
-    margin-right: 25em;
+    border-radius: 3px;
+    width: 100%;
+    height: 30%;
+    margin-bottom: 100%;
 }
 
 .card-2 h2 {
-    font-size: 1.8em;
+    font-size: 26px;
+    margin-inline: 8%;
 }
 
 #add {
     background-color: #93C47D;
+    padding: 2px 1px;
+    margin: 26px;
+    font-size: 16px;
+    width: 160px;
+    border: 2px solid black;
+    box-shadow: 2px 2px rgba(0, 0, 0, 1);
+    cursor: pointer;
 }
 
 strong {
