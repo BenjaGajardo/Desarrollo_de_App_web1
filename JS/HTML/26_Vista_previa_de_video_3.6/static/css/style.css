@@ -1,7 +1,8 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /*outline: 1px solid black;*/
+    outline: 1px solid black;
     font-family: cursive;
     font-weight: 100;
 }
@@ -19,11 +20,11 @@
 }
 
 h1{
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .search{
-    width: 60%;
+    width: 70%;
     height: 60%;
     margin-top: 10px;
 }
@@ -53,12 +54,22 @@ button{
 .nav-container{
     display: flex;
     justify-content: space-between;
-    width: 53rem;
+    width: 76rem;
+    max-width: 100%;
+    align-items: center;
 }
 
 .flex-container{
     margin-inline: 15%;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.col-l{
+    flex: 2;
+    min-width: 300px;  
 }
 
 .col-r{
@@ -130,10 +141,19 @@ h2{
     margin-left: 10px;
 }
 
-.video-small{
+.video-small {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin-top: 10px;
+    gap: 10px;
 }
+
+.video-small img {
+    border-radius: 8px;
+}
+
 
 .video-small video{
     padding-inline: 10px;

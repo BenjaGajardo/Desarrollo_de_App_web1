@@ -1,17 +1,7 @@
-function LogIn_Out(element){
-    if (element.innerText == "Login"){
-        element.innerText = "Log out";
-    }else{
-        element.innerText = "Login"
-    }
-}
-
-function cambioVideo(element){
-    let videoMain = document.getElementById("Main_video");
-    let sourceMain = videoMain.src;
-    videoMain.src = element.src;
-    element.src = sourceMain;
-    let cambioTitulo = document.getElementById("titulo")
-    let titulopequeno = element.nextElementSibling;
-    cambioTitulo.textContent = titulopequeno.textContent; 
+// Cambia el video principal al hacer clic en uno de la lista
+function changeVideo(videoId, title) {
+    const mainVideo = document.getElementById('main-video');
+    const videoTitle = document.getElementById('video-title');
+    mainVideo.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    videoTitle.textContent = title;
 }
