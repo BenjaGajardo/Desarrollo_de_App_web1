@@ -1,83 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VideoLab</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
-
-    <!-- top navigation -->
-    <div class="top">
-        <div class="nav-container">
-            <h1>VideoLab</h1>
-            <input type="text" placeholder="Search" name="query" class="search">
-            <button class="btn">Login</button>
+    <div class="container">
+        <!-- top navigation -->
+        <div class="top">
+            <div class="nav-container">
+                <h1>VideoLab</h1>
+                <input type="text" placeholder="Search" name="query" class="search">
+                <button class="btn">Login</button>
+            </div>
         </div>
-    </div>
 
-    <!-- main content -->
-    <div class="flex-container">
+        <!-- main content -->
+        <div class="flex-container">
 
-        <!-- left column -->
-        <div class="col-l">
+            <!-- left column -->
+            <div class="col-l">
 
-            <!-- video principal -->
-            <figure class="placeholder">
-                <iframe 
-                    id="main-video"
-                    width="740"
-                    height="400"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </figure>
+                <!-- video principal -->
+                <figure class="placeholder">
+                    <iframe id="main-video" width="740" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </figure>
 
-            <!-- video info -->
-            <div class="row">
-                <div class="start">
-                    <h2 id="video-title">Example Video Title</h2>
-                    <h3>1.3K Views | June, 18, 2021</h3>
-                    <div class="user">
-                        <img src="resources/images/abstract-user-flat-4.png" alt="user-circle" class="avatar-s">
-                        <span class="user-name">Example User Name</span>
+                <!-- video info -->
+                <div class="row">
+                    <div class="start">
+                        <h2 id="video-title">Example Video Title</h2>
+                        <h3>1.3K Views | June, 18, 2021</h3>
+                        <div class="user">
+                            <img src="resources/images/abstract-user-flat-4.png" alt="user-circle" class="avatar-s">
+                            <span class="user-name">Example User Name</span>
+                        </div>
                     </div>
+                    <button class="btn-2">Subscribe</button>
                 </div>
-                <button class="btn-2">Subscribe</button>
+
             </div>
 
-        </div>
+            <!-- right column -->
+            <div class="col-r">
 
-        <!-- right column -->
-        <div class="col-r">
+                <h3 class="sub-header">Up Next</h3>
+                <div class="video-list">
+                <div class="video-small" onclick="cambioVideo('dQw4w9WgXcQ', 'Not a Rick Roll')">
+                    <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" width="200" height="140" alt="thumbnail">
+                    <span class="video-title">Not a Rick Roll</span>
+                </div>
 
-            <h3 class="sub-header">Up Next</h3>
+                <div class="video-small" onclick="cambioVideo('aqz-KE-bpKQ', '10 Facts About ET\'s Cat!')">
+                    <img src="https://img.youtube.com/vi/aqz-KE-bpKQ/0.jpg" width="200" height="140" alt="thumbnail">
+                    <span class="video-title">10 Facts About ET's Cat!</span>
+                </div>
 
-            <div class="video-small" onclick="changeVideo('dQw4w9WgXcQ', 'Not a Rick Roll')">
-                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" width="200" height="140" alt="thumbnail">
-                <span class="video-title">Not a Rick Roll</span>
-            </div>
+                <div class="video-small" onclick="cambioVideo('hY7m5jjJ9mM', '5 Cosplay Tips')">
+                    <img src="https://img.youtube.com/vi/hY7m5jjJ9mM/0.jpg" width="200" height="140" alt="thumbnail">
+                    <span class="video-title">5 Cosplay Tips</span>
+                </div>
 
-            <div class="video-small" onclick="changeVideo('aqz-KE-bpKQ', '10 Facts About ET\'s Cat!')">
-                <img src="https://img.youtube.com/vi/aqz-KE-bpKQ/0.jpg" width="200" height="140" alt="thumbnail">
-                <span class="video-title">10 Facts About ET's Cat!</span>
-            </div>
+                <div class="video-small" onclick="cambioVideo('tAGnKpE4NCI', 'Boy Battles Dinobot in Thunderdome')">
+                    <img src="https://img.youtube.com/vi/tAGnKpE4NCI/0.jpg" width="200" height="140" alt="thumbnail">
+                    <span class="video-title">Boy Battles Dinobot in Thunderdome</span>
+                </div>
 
-            <div class="video-small" onclick="changeVideo('hY7m5jjJ9mM', '5 Cosplay Tips')">
-                <img src="https://img.youtube.com/vi/hY7m5jjJ9mM/0.jpg" width="200" height="140" alt="thumbnail">
-                <span class="video-title">5 Cosplay Tips</span>
-            </div>
+                </div>
 
-            <div class="video-small" onclick="changeVideo('tAGnKpE4NCI', 'Boy Battles Dinobot in Thunderdome')">
-                <img src="https://img.youtube.com/vi/tAGnKpE4NCI/0.jpg" width="200" height="140" alt="thumbnail">
-                <span class="video-title">Boy Battles Dinobot in Thunderdome</span>
             </div>
 
         </div>
@@ -86,4 +87,5 @@
 
     <script src="static/js/script.js"></script>
 </body>
+
 </html>
