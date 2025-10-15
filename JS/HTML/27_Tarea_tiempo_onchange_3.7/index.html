@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.7 Tiempo onchange</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!-- top navigation -->
+    <div class="top">
+        <div class="nav-container">
+            <h1>DojoWeather</h1>
+            <div class="nav-links">
+                <a href="#">Burbank</a>
+                <a href="#">Chicago</a>
+                <a href="#">Dallas</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="header">
+            <h1>San Jose</h1>
+            <div class="row">
+                <p>Show temperature in</p>
+                <select name="change-degrees" id="conversion">
+                    <option value="">°C</option>
+                    <option value="">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="temperatura-dias">
+            <div class="tarjetas-dias">
+                <div class="dia">
+                    <h3>Today</h3>
+                    <img src="resources/images/sunny.png" alt="sunny" class="icon">
+                    <p>some rain</p>
+                    <p class="temp">24°</p>
+                    <p class="temp">18°</p>
+                </div>
+                <div class="dia">
+                    <h3>Tomorrow</h3>
+                    <img src="resources/images/cloudy.png" alt="cloudy" class="icon">
+                    <p>some sun</p>
+                    <p class="temp">27°</p>
+                    <p class="temp">19°</p>
+                </div>
+                <div class="dia">
+                    <h3>Friday</h3>
+                    <img src="resources/images/rainy.png" alt="rainy" class="icon">
+                    <p>some clouds</p>
+                    <p class="temp">21°</p>
+                    <p class="temp">16°</p>
+                </div>
+                <div class="dia">
+                    <h3>some sun</h3>
+                    <img src="resources/images/sunny.png" alt="sunny" class="icon">
+                    <p class="temp">26°</p>
+                    <p class="temp">21°</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
