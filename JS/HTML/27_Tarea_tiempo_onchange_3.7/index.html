@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3.7 Tiempo onchange</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -12,14 +11,13 @@
 </head>
 
 <body>
-    <!-- top navigation -->
     <div class="top">
         <div class="nav-container">
             <h1>DojoWeather</h1>
             <div class="nav-links">
-                <a href="#">Burbank</a>
-                <a href="#">Chicago</a>
-                <a href="#">Dallas</a>
+                <a href="#" onclick="infoM('Burbank')">Burbank</a>
+                <a href="#" onclick="infoM('Chicago')">Chicago</a>
+                <a href="#" onclick="infoM('Dallas')">Dallas</a>
             </div>
         </div>
     </div>
@@ -29,13 +27,15 @@
             <h1>San Jose</h1>
             <div class="row">
                 <h3>Show temperature in</h3>
-                <select name="change-degrees" id="conversion">
-                    <option value="">°C</option>
-                    <option value="">°F</option>
+                <select name="change-degrees" id="conversion" onchange="transformarTemp(this)">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
                 </select>
             </div>
         </div>
+
         <div class="sub-header"></div>
+
         <div class="temperatura-dias">
             <div class="tarjetas-dias">
                 <div class="dia">
@@ -43,8 +43,8 @@
                     <img src="resources/images/some_rain.png" alt="sunny" class="icon">
                     <p class="hijo-p">some rain</p>
                     <div class="hijo-dia">
-                        <p class="rojo">24°</p>
-                        <p class="azul">18°</p>
+                        <p class="rojo hottest">24</p>
+                        <p class="azul coldest">18</p>
                     </div>
                 </div>
                 <div class="dia">
@@ -52,8 +52,8 @@
                     <img src="resources/images/some_sun.png" alt="cloudy" class="icon">
                     <p class="hijo-p">some sun</p>
                     <div class="hijo-dia">
-                        <p class="rojo">27°</p>
-                        <p class="azul">19°</p>
+                        <p class="rojo hottest">27</p>
+                        <p class="azul coldest">19</p>
                     </div>
                 </div>
                 <div class="dia">
@@ -61,8 +61,8 @@
                     <img src="resources/images/some_clouds.png" alt="rainy" class="icon">
                     <p class="hijo-p">some clouds</p>
                     <div class="hijo-dia">
-                        <p class="rojo">21°</p>
-                        <p class="azul">16°</p>
+                        <p class="rojo hottest">21</p>
+                        <p class="azul coldest">16</p>
                     </div>
                 </div>
                 <div class="dia">
@@ -70,24 +70,27 @@
                     <img src="resources/images/some_sun.png" alt="sunny" class="icon">
                     <p class="hijo-p">some sun</p>
                     <div class="hijo-dia">
-                        <p class="rojo">26°</p>
-                        <p class="azul">21°</p>
+                        <p class="rojo hottest">26</p>
+                        <p class="azul coldest">21</p>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="footer">
             <img src="resources/images/cookie.png" alt="cookie" class="icon">
-            <div class="text-footer">
+            <div class="text-footer galletitas">
                 <h2>Stop! Cookie time</h2>
-                <h3>We use cookies (sadly not the edible ones) to personalizecontent and ads, to provide social media
+                <h3>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
                     features and to analyze our traffic.<a href="link-footer"> Read more...</a></h3>
             </div>
             <div class="button-footer">
-                <button class="btn">I accept</button>
+                <button class="btn" onclick="ocultarFooter()">I accept</button>
             </div>
         </div>
     </div>
+
+    <script src="static/js/script.js"></script>
 </body>
 
 </html>
