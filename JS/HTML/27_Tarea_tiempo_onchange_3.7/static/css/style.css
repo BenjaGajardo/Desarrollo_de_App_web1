@@ -2,165 +2,180 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /*outline: 1px solid black;*/
     font-family: cursive;
     font-weight: 100;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .top {
     background-color: #9FC5F8;
     color: white;
-    padding: 15px 0;
+    padding: 16px 0; 
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
-    padding-inline: 15%;
     align-items: center;
-    width: 100%;        
+    padding-inline: 18%; 
+    flex-wrap: wrap; 
+    width: 100%;
 }
 
-h1{
-    font-size: 40px;
-}
-
-.nav-links{
-    justify-content: space-between;
-}
-
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 205px;
-}
-
-.sub-header{
-    align-items: center;
-    border-bottom: 2px solid black;
-    padding-bottom: 10px;
-    border-radius: 45px;
-    margin: 10px 210px 0px 210px;
-}
-
-.changes-degrees{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    font-weight: bold;
-}
-
-
-.row{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    font-weight: bold;
+h1 {
+    font-size: 48px; 
+    text-align: center;
 }
 
 a {
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 32px; 
 }
 
-.temperatura-dias{
-    margin-inline: 205px;
-    margin-top: 20px;
-}
-
-.tarjetas-dias{
+.nav-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 32px; 
+    flex-wrap: wrap;
+}
+
+.header {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    padding-inline: 18%;
+    flex-wrap: wrap;
+}
+
+.sub-header {
+    align-items: center;
+    border-bottom: 2px solid black; 
+    border-radius: 45px;
+    margin: 16px auto; 
+    padding-bottom: 8px; 
+    width: 64%;
+    text-align: center;
+}
+
+.changes-degrees,
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 16px; 
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.row h2 {
+    font-size: 28px; 
+    color: #000000;
+    font-weight: bold;
+}
+
+.temperatura-dias {
+    margin: 24px auto; 
+    width: 85%;
+}
+
+.tarjetas-dias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px; 
 }
 
 .dia {
-    width: 190px;       
-    height: 310px;       
+    flex: 1 1 200px;
+    max-width: 230px;
+    min-width: 150px;
     background-color: #E8E8E8;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
-    padding: 15px;
+    padding: 16px 8px; 
 }
 
 .dia img {
-    width: 80%;         
-    height: auto;   
-    margin-top: 20px;
-    border-radius: 90px;
+    width: 70%;
+    height: auto;
+    margin-top: 16px; 
+    border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.azul{
+.azul {
     color: #2B78E4;
 }
 
-.rojo{
+.rojo {
     color: #CF2A27;
 }
 
-.hijo-p{
-    margin-top: 30px;
+.hijo-p {
+    margin-top: 24px; 
 }
 
-.hijo-dia{
+.hijo-dia {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 16px; 
+    font-size: 19px; 
 }
 
-.footer{
+/* FOOTER */
+.footer {
     display: flex;
     align-items: center;
-    justify-content:center;
-    margin-top: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: #EEEEEE;
-    margin-inline: 205px;
-    border: solid 2px black;
+    border: solid 2px black; 
+    width: 63%;
+    margin: 24px auto; 
+    padding: 16px 16px; 
+    gap: 32px; 
 }
 
-.img-footer{
-    height: 50px;
-    width: 30px;
+.img-footer {
+    height: 48px; 
+    width: auto;
 }
 
-.text-footer{
+.text-footer {
     display: flex;
-    flex-direction: column;   
-    margin-left: 60px;
-    width: 70%;
-    padding: 2dvh;   
-
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
 }
 
-.btn{
+.btn {
     background-color: #9FC5F8;
-    height: 30px;
-    width: 100px;
+    height: 40px;       
+    width: 120px;       
     cursor: pointer;
-    box-shadow: 0.25rem 0.25rem rgba(0, 0, 0, 1);
-    font-size: 15px;
-    margin-bottom: 20px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 1);
+    font-size: 16px;    
+    margin: 16px auto;
 }
 
-.text-footer a{
+.text-footer a {
     color: #085394;
-    font-size: 15px;
+    font-size: 14px; 
 }
 
 .text-footer h2 {
-    font-size: 18px;
+    font-size: 18px; 
 }
 
 .text-footer h3 {
-    width: 80%;
-    font-size: 15px;
+    font-size: 14px; 
+    width: 90%;
+    margin: auto;
 }
