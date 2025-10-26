@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 1px solid black;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.nav-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+/* Home con espacio grande */
+.nav-home {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+    margin-right: 100px;
+    /* espacio grande entre Home y las secciones */
+}
+
+/* Lista horizontal */
+.nav-lista {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    /* espacio entre secciones */
+}
+
+.nav-lista a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.nav-lista a:hover {
+    color: #00bfff;
+    /* color al pasar el mouse */
+}
+
+/* ===== SECCIONES ===== */
+#home {
+  height: 100vh; /* Ocupa toda la pantalla */
+}
+
+#about {
+  height: 60vh; /* 70% del alto de la pantalla */
+}
+
+#services {
+  height: 80vh; /* Más pequeña */
+}
+
+#clients {
+    height: 80vh;
+}
+
+#skills{
+    height: 80vh;
+}
+
+#education{
+    height: 80vh;
+}
+
+#certifications{
+    height: 80vh;
+}
+
+#experience{
+    height: 80vh;
+}
+
+#references{
+    height: 80vh;
+}
+
+#portafolio{
+    height: 80vh;
+}
+
+#organizations{
+    height: 80vh;
+}
+
+#contact{
+    height: 80vh;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+section:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+#home {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 50px; /* espacio lateral */
+}
+
+.home-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Contenedor principal de texto e imagen */
+.home-hijo-mayor {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    align-items: center;
+}
+
+/* Texto lateral */
+.home-contenido {
+    color: white;
+    max-width: 40%; /* ajusta el ancho del texto */
+}
+
+.home-contenido p{
+    margin-top: 10px;
+}
+
+/* Imagen principal circular */
+.perfil-contenedor {
+    position: relative;
+    width: 260px;
+    height: 260px;
+}
+
+.perfil-contenedor h2, h3{
+    color: #fff;
+    text-align: center;
+}
+
+.img2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Imágenes pequeñas alrededor */
+.img-pequeña {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Posicionamiento orbital alrededor de la imagen principal */
+.pequeña1 { 
+    top: -70px; 
+    left: 60%; 
+    transform: translateX(-50%); 
+}
+
+.pequeña2 { 
+    bottom: -40px; 
+    left: -50px; 
+}
+
+.pequeña3 { 
+    bottom: -20px;
+    right: -40px; 
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    background-color: #f5f5f5;
+}
+
+/* Texto */
+.about-texto {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    max-width: 40%;
+}
+
+.about-texto h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.about-texto h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #444;
+}
+
+/* Contenedor de imágenes */
+.about-transicion {
+    position: relative;
+    width: 400px;   /* tamaño del contenedor */
+    height: 400px;
+    margin-right: 120px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Todas las imágenes ocupan el mismo lugar */
+.about-imagen img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeZoom 32s linear infinite;
+    transform: scale(1);
+    transform-origin: center;
+}
+
+/* Cada imagen inicia en momentos distintos */
+.img-aboutMe1 { animation-delay: 0s; }
+.img-aboutMe2 { animation-delay: 8s; }
+.img-aboutMe3 { animation-delay: 16s; }
+.img-aboutMe4 { animation-delay: 24s; }
+
+/* Animación de fade + zoom */
+@keyframes fadeZoom {
+    0%, 20%   { opacity: 1; transform: scale(1); }
+    25%, 45%  { opacity: 0; transform: scale(1.05); }
+    100%      { opacity: 0; transform: scale(1); }
+}
