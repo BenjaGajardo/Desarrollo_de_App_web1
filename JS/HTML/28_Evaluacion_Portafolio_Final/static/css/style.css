@@ -253,16 +253,16 @@ section:nth-child(even) {
     height: 100%;
     object-fit: cover;
     opacity: 0;
-    animation: fadeZoom 32s linear infinite;
+    animation: fadeZoom 48s linear infinite;
     transform: scale(1);
     transform-origin: center;
 }
 
 /* Cada imagen inicia en momentos distintos */
 .img-aboutMe1 { animation-delay: 0s; }
-.img-aboutMe2 { animation-delay: 8s; }
-.img-aboutMe3 { animation-delay: 16s; }
-.img-aboutMe4 { animation-delay: 24s; }
+.img-aboutMe2 { animation-delay: 12s; }
+.img-aboutMe3 { animation-delay: 24s; }
+.img-aboutMe4 { animation-delay: 36s; }
 
 /* Animación de fade + zoom */
 @keyframes fadeZoom {
