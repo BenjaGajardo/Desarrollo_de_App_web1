@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const images = document.querySelectorAll('.about-transicion .img-aboutMe');
+    const images = document.querySelectorAll('.about-transicion .img-sobreMi');
     let current = 0;
     const total = images.length;
     const interval = 8000; // 8 segundos por imagen

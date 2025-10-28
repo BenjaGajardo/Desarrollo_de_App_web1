@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    outline: 1px solid black;
+    /*outline: 1px solid black;*/
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 /* Home con espacio grande */
-.nav-home {
+.nav-casa {
     color: white;
     text-decoration: none;
     font-size: 1.8em;
@@ -62,30 +62,18 @@ body {
 
 /* ===== SECCIONES ===== */
 #home {
-  height: 100vh; /* Ocupa toda la pantalla */
+  height: 80vh; /* Ocupa toda la pantalla */
 }
 
 #about {
-  height: 60vh; /* 70% del alto de la pantalla */
-}
-
-#services {
-  height: 80vh; /* Más pequeña */
-}
-
-#clients {
-    height: 80vh;
+  height: 70vh; /* 70% del alto de la pantalla */
 }
 
 #skills{
-    height: 80vh;
+    height: 100vh;
 }
 
 #education{
-    height: 80vh;
-}
-
-#certifications{
     height: 80vh;
 }
 
@@ -93,15 +81,7 @@ body {
     height: 80vh;
 }
 
-#references{
-    height: 80vh;
-}
-
 #portafolio{
-    height: 80vh;
-}
-
-#organizations{
     height: 80vh;
 }
 
@@ -123,7 +103,6 @@ section:nth-child(even) {
 
 #home {
     position: relative;
-    height: 600px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -209,7 +188,6 @@ section:nth-child(even) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80vh;
     background-color: #f5f5f5;
 }
 
@@ -256,4 +234,144 @@ section:nth-child(even) {
 
 .about-transicion{
     margin-right: 180px;
+}
+
+#skills {
+    background-color: #1A1F22;
+}
+
+/* Contenedor vertical de Skills */
+.skills-contenedor {
+    display: flex;
+    flex-direction: column;   /* organiza elementos en vertical */
+    align-items: center;      /* centra horizontalmente */
+    width: 100%;
+    justify-content: space-around;
+}
+
+/* Título centrado */
+.titulo-skills {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px; 
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+/* Filas de imágenes (como antes) */
+.skills-hijo-mayor1,
+.skills-hijo-mayor2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    width: 80%;                     
+    justify-content: space-around; 
+    color: #fff;
+}
+
+.skills-imagen {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Imagen de habilidad */
+.img-habilidades {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Título debajo de la imagen */
+.skills-imagen h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Efecto hover */
+.skills-imagen:hover {
+    border-radius: 30px;
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.skills-lista li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Sección de Educación */
+#education {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+/* Imagen de fondo */
+.education-img {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    object-fit: cover; /* asegura que la imagen llene el contenedor */
+    opacity: 0.5; /* controla la transparencia del fondo */
+    z-index: 0;
+}
+
+/* Texto encima */
+#education h1 {
+    position: relative;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 60px;
+}
+
+/* Contenedor del texto principal */
+.educacion-texto {
+    position: absolute;
+    margin-right: 2%;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.educacion-texto {
+    margin-top: 30px;
+}
+
+/* Imagen pequeña (centrada vertical en mini fondo, alineada a la izquierda) */
+.img-educacion {
+    position: absolute;
+    margin-top: 23%;   /* centra verticalmente en mini fondo, ajusta según necesidad */
+    left: 5%;   /* cerca del borde izquierdo */
+    width: 220px;  /* tamaño ajustable */
+    height: auto;
+    z-index: 1;
+}
+
+/* Contenedor del texto detallado */
+.educacion-texto2 {
+    margin-top: 25%; /* debajo del mini fondo */
+    margin-left: 10%; /* separa del borde izquierdo */
+    max-width: 60%;
+}
+
+.educacion-texto2 h2 {
+    margin-bottom: 10px;
+}
+
+.educacion-texto2 p, .educacion-texto2 li {
+    margin-bottom: 8px;
+    line-height: 1.5;
 }
