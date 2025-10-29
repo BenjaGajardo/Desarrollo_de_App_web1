@@ -413,19 +413,6 @@ section:nth-child(even) {
     margin-bottom: 9px;
 }
 
-.experiencia-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Manda la imagen al fondo */
-}
-#experience {
-    position: relative; /* Necesario para el posicionamiento absoluto */
-}
-
 /* Sección de Educación */
 #experience {
     position: relative;
@@ -434,6 +421,16 @@ section:nth-child(even) {
     justify-content: center;
     align-items: flex-start;
     overflow: hidden;
+}
+
+.experiencia-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    z-index: 1; 
 }
 
 /* Contenedor del texto principal */
@@ -449,9 +446,7 @@ section:nth-child(even) {
 }
 
 .experiencia-texto2 {
-    margin-top: 23%;       
-    margin-left: -1250px;   
-    max-width: 1600px;      
+    margin-top: 43%;        
 }
 
 .experiencia-texto2 h2 {
@@ -464,15 +459,28 @@ section:nth-child(even) {
 
 .experiencia-imagenes {
     display: flex;
-    flex-direction: column; /* Muestra las imágenes en columna */
-    align-items: center;    /* Centra las imágenes horizontalmente */
-    gap: 15px;              /* Espacio entre las imágenes */
+    flex-direction: column; 
+    align-items: center;    
+    gap: 15px;  
+    margin-top: 560px;     
 }
 
-.experiencia-imagenes img {
-    width: 120px;           /* Ajusta el tamaño (puedes cambiarlo a gusto) */
-    height: auto;           /* Mantiene la proporción original */
-    border-radius: 10px;    /* Bordes redondeados opcionales */
+.img-experiencia2, .img-experiencia3 {
+    width: 50px;       
+    height: auto;           
+    border-radius: 10px;   
+}
+
+.img-experiencia1{
+    width: 110px;
+    height: auto;           
+    border-radius: 10px;   
+
+}
+
+.contenedor-hijo-mayor{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 
