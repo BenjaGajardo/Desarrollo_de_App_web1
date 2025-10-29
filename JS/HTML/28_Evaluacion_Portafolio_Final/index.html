@@ -28,7 +28,7 @@
 
     <!-- Ejemplo de secciones -->
     <section id="home">
-        <img src="resources/images/8457103.jpg" alt="Imagen de fondo" class="home-img">
+        <img src="resources/images/8457103.jpg" alt="Imagen de fondo" class="home-img"> 
 
         <div class="home-hijo-mayor">
             <!-- Texto lateral -->
@@ -39,7 +39,7 @@
 
             <!-- Imagen principal -->
             <div class="perfil-contenedor">
-                <img src="resources/images/1000041645.jpg" alt="Imagen de perfil" class="img2">
+                <img src="resources/images/1000041645.jpg" alt="Imagen de perfil" class="img2" onmouseover="agrandar(this)" onmouseout="reducir(this)">
 
                 <!-- Imágenes pequeñas alrededor -->
                 <img src="resources/images/5352-html5.png" alt="HTML5" class="img-pequeña pequeña1">
@@ -77,55 +77,84 @@
 
 <section id="skills">
     <div class="skills-contenedor">
-        <h1 class="titulo-skills">Habilidades(Tecnicas/Blandas)</h1>
+        <h1 class="titulo-skills">Habilidades (Técnicas / Blandas)</h1>
 
         <div class="skills-hijo-mayor1">
-            <div class="skills-imagen">
-                <img src="resources/images/lenguajes-programacion.png" alt="Pensamiento Lógico" class="img-habilidades">
+            <!-- Lenguajes de programación -->
+            <div class="skills-imagen" onclick="mostrarDescripcion(this)">
+                <img src="resources/images/lenguajes-programacion.png" alt="Lenguajes de programación" class="img-habilidades">
                 <h2>Lenguajes de programación</h2>
                 <ul class="skills-lista">
-                    <li>Html</li>
-                    <li>Css</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
                     <li>JavaScript</li>
                     <li>Python</li>
                 </ul>
+                <div class="texto-habilidad">
+                    Estos lenguajes son esenciales para crear sitios web interactivos, dinámicos y accesibles.
+                </div>
             </div>
-            <div class="skills-imagen">
-                <img src="resources/images/bases-de-datos.png" alt="Pensamiento Crítico" class="img-habilidades">
+
+            <!-- Bases de datos -->
+            <div class="skills-imagen" onclick="mostrarDescripcion(this)">
+                <img src="resources/images/bases-de-datos.png" alt="Bases de datos" class="img-habilidades">
                 <h2>Bases de datos</h2>
                 <ul class="skills-lista">
-                    <li>Mysql</li>
+                    <li>MySQL</li>
                     <li>MongoDB</li>
                 </ul>
+                <div class="texto-habilidad">
+                    Manejo de datos estructurados y no estructurados, consultas, relaciones y optimización de información.
+                </div>
             </div>
-            <div class="skills-imagen">
-                <img src="resources/images/software.jpg" alt="Creatividad" class="img-habilidades">
+
+            <!-- Software -->
+            <div class="skills-imagen" onclick="mostrarDescripcion(this)">
+                <img src="resources/images/software.jpg" alt="Software" class="img-habilidades">
                 <h2>Software</h2>
                 <ul class="skills-lista">
                     <li>Git</li>
                     <li>Linux</li>
                 </ul>
+                <div class="texto-habilidad">
+                    Conocimiento en control de versiones, entornos Linux y herramientas de desarrollo colaborativo.
+                </div>
             </div>
         </div>
 
         <div class="skills-hijo-mayor2">
-            <div class="skills-imagen">
-                <img src="resources/images/aprendizaje-continuo.jpg" alt="Aprendizaje continuo" class="img-habilidades">
-                <h2>Pensamiento Crítico</h2>
+            <!-- Pensamiento crítico -->
+            <div class="skills-imagen" onclick="mostrarDescripcion(this)">
+                <img src="resources/images/aprendizaje-continuo.jpg" alt="Pensamiento crítico" class="img-habilidades">
+                <h2>Pensamiento crítico</h2>
+                <div class="texto-habilidad">
+                    Capacidad de analizar problemas, evaluar soluciones y tomar decisiones efectivas en proyectos.
+                </div>
             </div>
-            <div class="skills-imagen">
+
+            <!-- Comunicación efectiva -->
+            <div class="skills-imagen" onclick="mostrarDescripcion(this)">
                 <img src="resources/images/Comunicacion.jpg" alt="Comunicación" class="img-habilidades">
-                <h2>Comunicación Efectiva</h2>
+                <h2>Comunicación efectiva</h2>
+                <div class="texto-habilidad">
+                    Habilidad para expresar ideas claramente, escuchar activamente y colaborar con equipos.
+                </div>
             </div>
-            <div class="skills-imagen">
-                <img src="resources/images/analista-rapido.jpg" alt="Analista rápido" class="img-habilidades">
-                <h2>Aprendizaje Continuo</h2>
+
+            <!-- Aprendizaje continuo -->
+            <div class="skills-imagen" onclick="mostrarDescripcion(this)">
+                <img src="resources/images/analista-rapido.jpg" alt="Aprendizaje continuo" class="img-habilidades">
+                <h2>Aprendizaje continuo</h2>
+                <div class="texto-habilidad">
+                    Constante actualización de conocimientos y adaptación a nuevas tecnologías y metodologías.
+                </div>
             </div>
         </div>
     </div>
 </section>
+
     <section id="education">
-        <img src="resources/images/fondo-liceo.png" alt="Imagen de fondo" class="education-img">
+        <img src="resources/images/fondo-liceo.png" alt="Imagen de fondo" class="educacion-img">
         <div class="educacion-texto">
             <h1>Educación</h1>
             <h2>Historial de educación de la especialidad año 2025</h2>
@@ -140,8 +169,21 @@
         </div>
     </section>
     <section id="experience">
-        <h1>Experience</h1>
-        
+        <img src="resources/images/fondo-codigo.jpeg" alt="Imagen de fondo" class="experiencia-img">
+        <div class="experiencia-texto">
+            <h1>Experiencia</h1>
+            <h2>Historial de educación de la especialidad año 2025</h2>
+        </div>
+        <img src="resources/images/liceo.png" alt="Proyectos" class="img-experiencia1">
+        <img src="resources/images/liceo.png" alt="Flapp" class="img-experiencia2">
+        <img src="resources/images/liceo.png" alt="Feria-tp" class="img-experiencia3">
+        <div class="experiencia-texto2">
+            <h2>Liceo Comercial Vate Vicente Huidobro</h2>
+            <p>Especialidad de programación - San Ramon, Santiago | 2025</p>
+            <li>Me especialize en distintos lenguajes de programación(python, javascript, sql, ect..).</li>
+            <li>Aprendi nuevas funciones en python, javascript y sql(args y kargs, funciones this y procediemientos sql).</li>
+            <li>Cree paginas web completamentes funcionales responsivas con funciones javascript y adaptables a cualquier pantalla.</li>
+        </div>
     </section>
     <section id="portafolio">
         <h1>Portafolio</h1>

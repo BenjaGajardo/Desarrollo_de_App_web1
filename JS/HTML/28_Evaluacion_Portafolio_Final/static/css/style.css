@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /*outline: 1px solid black;*/
+    outline: 1px solid black;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
@@ -37,7 +37,6 @@ body {
     text-decoration: none;
     font-size: 1.8em;
     margin-right: 100px;
-    /* espacio grande entre Home y las secciones */
 }
 
 /* Lista horizontal */
@@ -45,7 +44,6 @@ body {
     list-style: none;
     display: flex;
     gap: 30px;
-    /* espacio entre secciones */
 }
 
 .nav-lista a {
@@ -62,11 +60,11 @@ body {
 
 /* ===== SECCIONES ===== */
 #home {
-  height: 80vh; /* Ocupa toda la pantalla */
+    height: 80vh; 
 }
 
 #about {
-  height: 70vh; /* 70% del alto de la pantalla */
+    height: 70vh; 
 }
 
 #skills{
@@ -78,7 +76,7 @@ body {
 }
 
 #experience{
-    height: 80vh;
+    height: 90vh;
 }
 
 #portafolio{
@@ -106,7 +104,7 @@ section:nth-child(even) {
     overflow: hidden;
     display: flex;
     align-items: center;
-    padding: 0 50px; /* espacio lateral */
+    padding: 0 50px; 
 }
 
 .home-img {
@@ -132,7 +130,7 @@ section:nth-child(even) {
 /* Texto lateral */
 .home-contenido {
     color: white;
-    max-width: 40%; /* ajusta el ancho del texto */
+    max-width: 40%; 
 }
 
 .home-contenido p{
@@ -243,8 +241,8 @@ section:nth-child(even) {
 /* Contenedor vertical de Skills */
 .skills-contenedor {
     display: flex;
-    flex-direction: column;   /* organiza elementos en vertical */
-    align-items: center;      /* centra horizontalmente */
+    flex-direction: column;   
+    align-items: center;      
     width: 100%;
     justify-content: space-around;
 }
@@ -270,27 +268,31 @@ section:nth-child(even) {
     color: #fff;
 }
 
+/* Contenedor de cada imagen */
 .skills-imagen {
+    position: relative; 
     width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; 
 }
+
 
 /* Imagen de habilidad */
 .img-habilidades {
     width: 220px;
     height: 160px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 /* Título debajo de la imagen */
 .skills-imagen h2 {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -306,6 +308,43 @@ section:nth-child(even) {
     margin-bottom: 10px;
 }
 
+.skills-lista {
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Texto oculto sobre la imagen */
+.texto-habilidad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    opacity: 0;
+}
+
+.texto-habilidad:hover{
+    transition: opacity 0.5s ease;
+    background-color: rgba(0,0,0,0.95); 
+}
+
+.skills-imagen.activo .texto-habilidad {
+    opacity: 0;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.texto-habilidad.activa {
+    opacity: 1;
+}
+
 /* Sección de Educación */
 #education {
     position: relative;
@@ -317,12 +356,12 @@ section:nth-child(even) {
 }
 
 /* Imagen de fondo */
-.education-img {
+.educacion-img {
     position: absolute;
     width: 100%;
     height: 40%;
-    object-fit: cover; /* asegura que la imagen llene el contenedor */
-    opacity: 0.5; /* controla la transparencia del fondo */
+    object-fit: cover;
+    opacity: 0.5; 
     z-index: 0;
 }
 
@@ -352,17 +391,17 @@ section:nth-child(even) {
 /* Imagen pequeña (centrada vertical en mini fondo, alineada a la izquierda) */
 .img-educacion {
     position: absolute;
-    margin-top: 23%;   /* centra verticalmente en mini fondo, ajusta según necesidad */
-    left: 5%;   /* cerca del borde izquierdo */
-    width: 210px;  /* tamaño ajustable */
+    margin-top: 23%;   
+    left: 5%; 
+    width: 210px;  
     height: auto;
     z-index: 1;
 }
 
 /* Contenedor del texto detallado */
 .educacion-texto2 {
-    margin-top: 25%; /* debajo del mini fondo */
-    margin-left: 10%; /* separa del borde izquierdo */
+    margin-top: 25%; 
+    margin-left: 10%; 
     max-width: 60%;
 }
 
@@ -371,6 +410,54 @@ section:nth-child(even) {
 }
 
 .educacion-texto2 p, .educacion-texto2 li {
-    margin-bottom: 8px;
-    line-height: 1.5;
+    margin-bottom: 9px;
 }
+
+
+/* Sección de Educación */
+#experience {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+/* Imagen de fondo */
+.experiencia-img {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Contenedor del texto principal */
+.experiencia-texto {
+    position: absolute;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.experiencia-texto {
+    margin-top: 100px;
+}
+
+.experiencia-texto2 {
+    margin-top: 23%;       /* baja el texto */
+    margin-left: -1250px;     /* mueve hacia la derecha */
+    max-width: 1600px;      /* evita que se deforme */
+}
+
+.experiencia-texto2 h2 {
+    margin-bottom: 10px;
+}
+
+.experiencia-texto2 p, .experiencia-texto2 li {
+    margin-bottom: 30px;
+}
+
+
+

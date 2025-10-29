@@ -27,3 +27,24 @@ window.addEventListener('DOMContentLoaded', () => {
     setInterval(showNext, interval);
 });
 
+
+function agrandar(img) {
+  img.style.transform = "scale(1.2)";
+  img.style.transition = "transform 0.5s";
+}
+
+function reducir(img) {
+  img.style.transform = "scale(1)";
+}
+
+
+
+// Función que muestra u oculta la descripción
+function mostrarDescripcion(elemento) {
+    // Busca el texto oculto dentro de este contenedor
+    const texto = elemento.querySelector('.texto-habilidad');
+    
+    // Alterna la clase 'activa' para mostrar u ocultar
+    texto.classList.toggle('activa');
+}
+
