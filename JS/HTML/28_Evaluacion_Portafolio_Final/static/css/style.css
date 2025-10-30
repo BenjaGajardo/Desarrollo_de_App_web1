@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /*outline: 1px solid black;*/
+    /*outline: 1px solid red;*/
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
@@ -44,6 +44,7 @@ body {
     list-style: none;
     display: flex;
     gap: 30px;
+    margin-top: 10px;
 }
 
 .nav-lista a {
@@ -80,7 +81,7 @@ body {
 }
 
 #portafolio{
-    height: 80vh;
+    height: 130vh;
 }
 
 #contact{
@@ -396,6 +397,17 @@ section:nth-child(even) {
     width: 210px;  
     height: auto;
     z-index: 1;
+    border-radius: 30px;
+}
+
+.img-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+}
+
+.img-hover:hover {
+    transform: scale(1.1); /* Zoom ligero al pasar el mouse */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Sombra suave */
 }
 
 /* Contenedor del texto detallado */
@@ -489,9 +501,56 @@ section:nth-child(even) {
 }
 
 .experiencia-imagenes a img:hover {
-    transform: scale(1.1); /* Aumenta un 10% el tamaño */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4); /* Sombra suave */
-    cursor: pointer; /* Cambia el cursor a mano */
+    transform: scale(1.1); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4); 
+    cursor: pointer; 
 }
 
 
+
+.tarjetas-portafolio {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.tarjeta {
+    width: 400px; /* tamaño de cada tarjeta */
+    border-radius: 10px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border-radius: 10px; 
+    cursor: pointer; 
+}
+
+/* Efecto hover */
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); 
+}
+
+
+.contenedor-contacto{
+    width: 100%;
+}
+.tarjeta-contacto {
+    min-height: 200px;   /* Alto mínimo */
+    max-width: 600px;    /* Ancho máximo */
+    width: 100%;          /* Ancho relativo para móviles */
+    margin: 0 auto;      /* Centrar horizontalmente */
+}
+
+.cuerpo-contacto {
+    padding: 30px 20px;  /* Separación interna */
+}
+
+.texto-final{
+    margin-top: 30px;
+    text-align: center;
+}
