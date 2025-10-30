@@ -28,16 +28,20 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// Función que agranda la imagen al pasar el mouse
 function agrandar(img) {
+  // Aplica una transformación que aumenta el tamaño de la imagen al 120%
   img.style.transform = "scale(1.2)";
+  
+  // Agrega una transición suave para que el cambio no sea brusco (duración: 0.5 segundos)
   img.style.transition = "transform 0.5s";
 }
 
+// Función que devuelve la imagen a su tamaño original cuando se quita el mouse
 function reducir(img) {
+  // Restablece la escala de la imagen a su tamaño normal (100%)
   img.style.transform = "scale(1)";
 }
-
-
 
 // Función que muestra u oculta la descripción
 function mostrarDescripcion(elemento) {
@@ -48,3 +52,11 @@ function mostrarDescripcion(elemento) {
     texto.classList.toggle('activa');
 }
 
+function mostrarMensaje(boton) {
+  boton.innerText = "¡Gracias por visitar!";
+  boton.style.backgroundColor = "#28a745"; // cambia a verde
+  boton.style.transition = "0.3s";
+
+  // Si quieres mostrar un mensaje flotante o alerta:
+  alert("Redirigiendo a mi repositorio de GitHub...");
+}

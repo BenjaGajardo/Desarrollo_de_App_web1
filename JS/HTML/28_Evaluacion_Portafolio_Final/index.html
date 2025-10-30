@@ -2,16 +2,21 @@
 <html lang="e">
 
 <head>
+    <!-- ===== METADATOS Y ENLACES PRINCIPALES ===== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fuente principal -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Archivo de estilos propio -->
     <link rel="stylesheet" href="static/css/style.css">
     <title>Evaluación Portafolio 30%</title>
 </head>
 
 <body>
+    <!-- ===== NAVBAR / MENÚ DE NAVEGACIÓN ===== -->
     <nav class="navbar">
         <div class="nav-contenedor">
             <div class="nav-titulo">
@@ -28,25 +33,24 @@
         </div>
     </nav>
 
-    <!-- Ejemplo de secciones -->
+    <!-- ===== SECCIÓN HOME ===== -->
     <section id="home">
         <img src="resources/images/8457103.jpg" alt="Imagen de fondo" class="home-img">
 
         <div class="home-hijo-mayor">
-            <!-- Texto lateral -->
             <div class="home-contenido">
                 <h1>Bienvenido a mi sitio de portafolio</h1>
                 <p>Verás toda información de mis años de estudio, trabajos, habilidades, certificados, etc...</p>
             </div>
 
-            <!-- Imagen principal -->
             <div class="perfil-contenedor">
+                <!-- Imagen principal de perfil -->
                 <a href="https://github.com/BenjaGajardo" target="_blank">
                     <img src="resources/images/1000041645.jpg" alt="Imagen de perfil" class="img2"
                         onmouseover="agrandar(this)" onmouseout="reducir(this)">
                 </a>
 
-                <!-- Imágenes pequeñas alrededor -->
+                <!-- Iconos de lenguajes -->
                 <img src="resources/images/5352-html5.png" alt="HTML5" class="img-pequeña pequeña1">
                 <img src="resources/images/file_type_css.png" alt="CSS" class="img-pequeña pequeña2">
                 <img src="resources/images/javascript.webp" alt="JS" class="img-pequeña pequeña3">
@@ -57,6 +61,7 @@
         </div>
     </section>
 
+    <!-- ===== SECCIÓN ABOUT ===== -->
     <section id="about">
         <div class="about-texto">
             <h1>About Me</h1>
@@ -65,6 +70,8 @@
                 trabajo y
                 en mi tiempo libre juego multiples videojuegos.</h2>
         </div>
+
+        <!-- Galería de imágenes personales -->
         <div class="about-transicion">
             <div class="about-imagen">
                 <img src="resources/images/1000037389.jpg" alt="Yo" class="img-sobreMi">
@@ -81,12 +88,13 @@
         </div>
     </section>
 
+    <!-- ===== SECCIÓN SKILLS ===== -->
     <section id="skills">
         <div class="skills-contenedor">
             <h1 class="titulo-skills">Habilidades (Técnicas / Blandas)</h1>
 
+            <!-- Habilidades técnicas -->
             <div class="skills-hijo-mayor1">
-                <!-- Lenguajes de programación -->
                 <div class="skills-imagen" onclick="mostrarDescripcion(this)">
                     <img src="resources/images/lenguajes-programacion.png" alt="Lenguajes de programación"
                         class="img-habilidades">
@@ -102,7 +110,6 @@
                     </div>
                 </div>
 
-                <!-- Bases de datos -->
                 <div class="skills-imagen" onclick="mostrarDescripcion(this)">
                     <img src="resources/images/bases-de-datos.png" alt="Bases de datos" class="img-habilidades">
                     <h2>Bases de datos</h2>
@@ -116,7 +123,6 @@
                     </div>
                 </div>
 
-                <!-- Software -->
                 <div class="skills-imagen" onclick="mostrarDescripcion(this)">
                     <img src="resources/images/software.jpg" alt="Software" class="img-habilidades">
                     <h2>Software</h2>
@@ -130,8 +136,8 @@
                 </div>
             </div>
 
+            <!-- Habilidades blandas -->
             <div class="skills-hijo-mayor2">
-                <!-- Pensamiento crítico -->
                 <div class="skills-imagen" onclick="mostrarDescripcion(this)">
                     <img src="resources/images/aprendizaje-continuo.jpg" alt="Pensamiento crítico"
                         class="img-habilidades">
@@ -141,7 +147,6 @@
                     </div>
                 </div>
 
-                <!-- Comunicación efectiva -->
                 <div class="skills-imagen" onclick="mostrarDescripcion(this)">
                     <img src="resources/images/Comunicacion.jpg" alt="Comunicación" class="img-habilidades">
                     <h2>Comunicación efectiva</h2>
@@ -150,7 +155,6 @@
                     </div>
                 </div>
 
-                <!-- Aprendizaje continuo -->
                 <div class="skills-imagen" onclick="mostrarDescripcion(this)">
                     <img src="resources/images/analista-rapido.jpg" alt="Aprendizaje continuo" class="img-habilidades">
                     <h2>Aprendizaje continuo</h2>
@@ -162,38 +166,45 @@
         </div>
     </section>
 
-<section id="education">
-    <img src="resources/images/fondo-liceo.png" alt="Imagen de fondo" class="educacion-img">
+    <!-- ===== SECCIÓN EDUCATION ===== -->
+    <section id="education">
+        <img src="resources/images/fondo-liceo.png" alt="Imagen de fondo" class="educacion-img">
 
-    <div class="educacion-texto">
-        <h1>Educación</h1>
-        <h2>Historial de educación de la especialidad año 2025</h2>
-    </div>
+        <div class="educacion-texto">
+            <h1>Educación</h1>
+            <h2>Historial de educación de la especialidad año 2025</h2>
+        </div>
 
-    <!-- Imagen clickeable con animación -->
-    <a href="https://liceovvh.cl/" target="_blank" class="link-imagen">
-        <img src="resources/images/liceo.png" alt="Liceo comercial" class="img-educacion img-hover">
-    </a>
+        <div class="education-content-wrapper">
+            <a href="https://liceovvh.cl/" target="_blank" class="link-imagen">
+                <img src="resources/images/liceo.png" alt="Liceo comercial" class="img-educacion img-hover">
+            </a>
 
-    <div class="educacion-texto2">
-        <h2>Liceo Comercial Vate Vicente Huidobro</h2>
-        <p>Especialidad de programación - San Ramon, Santiago | 2025</p>
-        <li>Me especialize en distintos lenguajes de programación (python, javascript, sql, etc.)</li>
-        <li>Aprendí nuevas funciones en python, javascript y sql (args y kwargs, funciones this y procedimientos sql).</li>
-        <li>Creé páginas web completamente funcionales, responsivas y adaptables a cualquier pantalla.</li>
-    </div>
-</section>
+            <div class="educacion-texto2">
+                <h2>Liceo Comercial Vate Vicente Huidobro</h2>
+                <p>Especialidad de programación - San Ramon, Santiago | 2025</p>
+                <li>Me especialize en distintos lenguajes de programación (python, javascript, sql, etc.)</li>
+                <li>Aprendí nuevas funciones en python, javascript y sql (args y kwargs, funciones this y procedimientos
+                    sql).</li>
+                <li>Creé páginas web completamente funcionales, responsivas y adaptables a cualquier pantalla.</li>
+            </div>
+        </div>
     </section>
+
+    <!-- ===== SECCIÓN EXPERIENCE ===== -->
     <section id="experience">
         <img src="resources/images/fondo-codigo.jpg" alt="Imagen de fondo" class="experiencia-img">
+
         <div class="experiencia-texto">
             <h1>Experiencia</h1>
             <h2>Historial de educación de la especialidad año 2025</h2>
         </div>
+
         <div class="contenedor-hijo-mayor">
             <div class="experiencia-imagenes">
                 <p>Aquí más info y repositorios</p>
 
+                <!-- Enlaces a proyectos -->
                 <a href="https://github.com/BenjaGajardo/Screen-balance-codigo" target="_blank">
                     <img src="resources/images/screen-balance.PNG" alt="Proyectos" class="img-experiencia1">
                 </a>
@@ -219,11 +230,16 @@
             </div>
         </div>
     </section>
+
+    <!-- ===== SECCIÓN PORTAFOLIO ===== -->
     <section id="portafolio" class="contenedor-portafolio py-5">
         <div class="container">
             <h1 class="text-center mb-4">Portafolio</h1>
             <h4 class="text-center mb-4">Aqui estan los respositorios de algunos trabajos que hice</h4>
+
+            <!-- Tarjetas principales de proyectos -->
             <div class="row row-cols-1 row-cols-md-3 g-5">
+                <!-- Tarjeta KFC -->
                 <div class="col">
                     <div class="card">
                         <a href="https://github.com/BenjaGajardo/fundamentosWeb-1/tree/main/HTML/6.1-6.2-6.3_Front_end_pagina_kfc"
@@ -240,6 +256,7 @@
                     </div>
                 </div>
 
+                <!-- Tarjeta Burger King -->
                 <div class="col">
                     <div class="card">
                         <a href="https://github.com/BenjaGajardo/fundamentosWeb-1/tree/main/HTML/replica_pagina_bk"
@@ -256,6 +273,7 @@
                     </div>
                 </div>
 
+                <!-- Tarjeta Consalud -->
                 <div class="col">
                     <div class="card">
                         <a href="https://github.com/BenjaGajardo/Desarrollo_de_App_web1/tree/main/JS/HTML/Diagnostico"
@@ -271,32 +289,35 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="tarjetas-portafolio">
-                    <div class="tarjetas-portafolio d-flex justify-content-center gap-4">
-                        <div class="card tarjeta">
-                            <a href="https://github.com/BenjaGajardo/Screen-balance-codigo" target="_blank">
-                                <img src="resources/images/sc-img.png" class="card-img-top" alt="Proyecto 1">
-                            </a>
-                            <div class="card-body text-center">
-                                <h5 class="card-titulo">Pagina Screen Balance</h5>
-                                <p class="card-texto">Pagina web del proyecto que hice con mi grupo en la feria tp,
-                                    es capaz de adaptarse a cualquier pantalla.
-                                </p>
-                            </div>
+            <!-- Tarjetas adicionales personalizadas -->
+            <div class="tarjetas-portafolio">
+                <div class="tarjetas-portafolio d-flex justify-content-center gap-4">
+                    <!-- Tarjeta Screen Balance -->
+                    <div class="card tarjeta">
+                        <a href="https://github.com/BenjaGajardo/Screen-balance-codigo" target="_blank">
+                            <img src="resources/images/sc-img.png" class="card-img-top" alt="Proyecto 1">
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-titulo">Pagina Screen Balance</h5>
+                            <p class="card-texto">Pagina web del proyecto que hice con mi grupo en la feria tp,
+                                es capaz de adaptarse a cualquier pantalla.
+                            </p>
                         </div>
+                    </div>
 
-                        <div class="card tarjeta">
-                            <a href="https://github.com/BenjaGajardo/fundamentosWeb-1/tree/main/HTML/Trabajo_practico_pagina_de_perfil"
-                                target="_blank">
-                                <img src="resources/images/perfil-img.png" class="card-img-top" alt="Proyecto 2">
-                            </a>
-                            <div class="card-body text-center">
-                                <h5 class="card-titulo">Pagina De Perfil</h5>
-                                <p class="card-texto">Pagina web con navbar, tarjetas y botones para simular una
-                                    app de redes sociales hecha con html y css desde cero.
-                                </p>
-                            </div>
+                    <!-- Tarjeta Página de Perfil -->
+                    <div class="card tarjeta">
+                        <a href="https://github.com/BenjaGajardo/fundamentosWeb-1/tree/main/HTML/Trabajo_practico_pagina_de_perfil"
+                            target="_blank">
+                            <img src="resources/images/perfil-img.png" class="card-img-top" alt="Proyecto 2">
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-titulo">Pagina De Perfil</h5>
+                            <p class="card-texto">Pagina web con navbar, tarjetas y botones para simular una
+                                app de redes sociales hecha con html y css desde cero.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -304,10 +325,12 @@
         </div>
     </section>
 
+    <!-- ===== SECCIÓN CONTACTO ===== -->
     <section id="contacto" class="contenedor-contacto py-5">
         <div class="contenedor-contacto">
             <h1 class="titulo-seccion text-center mb-4">Contactos</h1>
 
+            <!-- Tarjeta de contacto -->
             <div class="tarjeta-contacto card">
                 <h5 class="cabecera-contacto card-header">Contactos</h5>
                 <div class="cuerpo-contacto card-body">
@@ -318,12 +341,15 @@
                         <li>X: KhriZx_x</li>
                     </ul>
                     <a href="https://github.com/BenjaGajardo/Desarrollo_de_App_web1/tree/main/JS/HTML"
-                        class="btn btn-primary">Git Hub</a>
+                        class="btn btn-primary" onclick="mostrarMensaje(this)">Git Hub</a>
                 </div>
             </div>
             <p class="texto-final">©2025 Benjamin Gajardo</p>
+        </div>
     </section>
 </body>
+
+<!-- ===== SCRIPTS ===== -->
 <script src="static/js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

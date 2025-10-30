@@ -1,3 +1,6 @@
+/* ========================================= */
+/* ===== 1. ESTILOS GENERALES Y RESETEO ===== */
+/* ========================================= */
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +11,12 @@
 
 body {
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Evita desbordamiento horizontal */
 }
 
-/* ===== NAVBAR ===== */
+/* ========================================= */
+/* ===== 2. NAVBAR (Barra de navegación) ===== */
+/* ========================================= */
 .navbar {
     position: sticky;
     top: 0;
@@ -29,9 +35,9 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 90%;
+    max-width: 1200px;
 }
 
-/* Home con espacio grande */
 .nav-casa {
     color: white;
     text-decoration: none;
@@ -39,7 +45,6 @@ body {
     margin-right: 100px;
 }
 
-/* Lista horizontal */
 .nav-lista {
     list-style: none;
     display: flex;
@@ -50,62 +55,71 @@ body {
 .nav-lista a {
     text-decoration: none;
     color: white;
-    font-size: 1em;
+    font-size: 17px;
     transition: color 0.3s;
 }
 
 .nav-lista a:hover {
     color: #00bfff;
-    /* color al pasar el mouse */
 }
 
-/* ===== SECCIONES ===== */
-#home {
+/* ========================================= */
+/* ===== 3. LAYOUT DE SECCIONES (Base) ===== */
+/* ========================================= */
+/* Definición de altura fija (viewport height) para cada sección */
+#home { 
+    height: 80vh; 
+
+}
+#about { 
+    height: 70vh;
+}
+#skills{ 
+    height: auto;
+    padding: 80px 0;
+}
+
+#education{ 
+    height: 90vh; 
+}
+#experience{ 
+    height: 90vh; 
+
+}
+#portafolio{ 
+    height: auto; 
+    padding: 80px 0; 
+
+}
+#contact{ 
     height: 80vh; 
 }
 
-#about {
-    height: 70vh; 
-}
-
-#skills{
-    height: 110vh;
-}
-
-#education{
-    height: 90vh;
-}
-
-#experience{
-    height: 90vh;
-}
-
-#portafolio{
-    height: 130vh;
-}
-
-#contact{
-    height: 80vh;
-}
-
+/* Estilos comunes a todas las secciones */
 section {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
     border-bottom: 1px solid #ccc;
+    flex-direction: column; 
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Alternancia de color de fondo para secciones pares */
 section:nth-child(even) {
     background-color: #e0e0e0;
 }
 
+/* ========================================= */
+/* ===== 4. SECCIÓN HOME ===== */
+/* ========================================= */
 #home {
     position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    padding: 0 50px; 
+    padding: 0;
+    height: 80vh; 
 }
 
 .home-img {
@@ -118,17 +132,17 @@ section:nth-child(even) {
     z-index: 1;
 }
 
-/* Contenedor principal de texto e imagen */
 .home-hijo-mayor {
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
     position: relative;
     z-index: 3;
     align-items: center;
 }
 
-/* Texto lateral */
+/* Texto de bienvenida */
 .home-contenido {
     color: white;
     max-width: 40%; 
@@ -138,7 +152,7 @@ section:nth-child(even) {
     margin-top: 10px;
 }
 
-/* Imagen principal circular */
+/* Contenedor de la imagen de perfil y texto */
 .perfil-contenedor {
     position: relative;
     width: 260px;
@@ -157,7 +171,7 @@ section:nth-child(even) {
     object-fit: cover;
 }
 
-/* Imágenes pequeñas alrededor */
+/* Imágenes pequeñas orbitales */
 .img-pequeña {
     position: absolute;
     width: 60px;
@@ -166,7 +180,6 @@ section:nth-child(even) {
     object-fit: cover;
 }
 
-/* Posicionamiento orbital alrededor de la imagen principal */
 .pequeña1 { 
     top: -70px; 
     left: 60%; 
@@ -174,42 +187,49 @@ section:nth-child(even) {
 }
 
 .pequeña2 { 
-    bottom: -40px; 
+    bottom: -40px;
     left: -50px; 
 }
 
 .pequeña3 { 
-    bottom: -20px;
+    bottom: -20px; 
     right: -40px; 
 }
 
+/* ========================================= */
+/* ===== 5. SECCIÓN ABOUT ME ===== */
+/* ========================================= */
 #about {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row; 
+    justify-content: center;
     align-items: center;
     background-color: #f5f5f5;
+    gap: 50px;
 }
 
-/* Texto */
+/* Bloque de texto */
 .about-texto {
     display: flex;
     flex-direction: column;
-    margin-left: 120px;
     max-width: 40%;
+    margin-left: 0; 
+    text-align: center;
 }
 
 .about-texto h1 {
-    font-size: 2.5em;
+    font-size: 25px;
     margin-bottom: 20px;
     color: #222;
 }
 
 .about-texto h2 {
-    font-size: 1.2em;
+    font-size: 19px;
     font-weight: 400;
     color: #444;
 }
 
+/* Contenedor de la transición de imágenes */
 .about-transicion {
     position: relative;
     width: 400px;
@@ -217,6 +237,7 @@ section:nth-child(even) {
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    margin-right: 0; 
 }
 
 .about-transicion img {
@@ -231,24 +252,22 @@ section:nth-child(even) {
     transform: scale(1) translate(0,0);
 }
 
-.about-transicion{
-    margin-right: 180px;
-}
-
+/* ========================================= */
+/* ===== 6. SECCIÓN SKILLS (Habilidades) ===== */
+/* ========================================= */
 #skills {
     background-color: #1A1F22;
+    min-height: auto;
 }
 
-/* Contenedor vertical de Skills */
 .skills-contenedor {
     display: flex;
     flex-direction: column;   
     align-items: center;      
     width: 100%;
-    justify-content: space-around;
+    max-width: 1200px;
 }
 
-/* Título centrado */
 .titulo-skills {
     text-align: center;
     color: #fff;
@@ -257,19 +276,19 @@ section:nth-child(even) {
     margin-top: 20px;
 }
 
-/* Filas de imágenes (como antes) */
+/* Filas de tarjetas de habilidades */
 .skills-hijo-mayor1,
 .skills-hijo-mayor2 {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
     flex-wrap: wrap;
-    width: 80%;                     
-    justify-content: space-around; 
+    width: 90%;                     
+    gap: 30px; 
     color: #fff;
 }
 
-/* Contenedor de cada imagen */
+/* Tarjeta individual de habilidad */
 .skills-imagen {
     position: relative; 
     width: 250px;
@@ -282,7 +301,6 @@ section:nth-child(even) {
 }
 
 
-/* Imagen de habilidad */
 .img-habilidades {
     width: 220px;
     height: 160px;
@@ -290,14 +308,13 @@ section:nth-child(even) {
     border-radius: 30px;
 }
 
-/* Título debajo de la imagen */
 .skills-imagen h2 {
     margin-top: 10px;
     font-size: 18px;
     text-align: center;
 }
 
-/* Efecto hover */
+/* Efecto hover en tarjeta */
 .skills-imagen:hover {
     border-radius: 30px;
     transform: translateY(-10px);
@@ -314,7 +331,7 @@ section:nth-child(even) {
     text-align: center;
 }
 
-/* Texto oculto sobre la imagen */
+/* Contenedor de texto que aparece al hacer hover */
 .texto-habilidad {
     position: absolute;
     top: 0;
@@ -325,96 +342,92 @@ section:nth-child(even) {
     color: white;
     display: flex;
     align-items: center;
+    justify-content: center; 
     text-align: center;
     padding: 10px;
     border-radius: 30px;
     opacity: 0;
-}
-
-.texto-habilidad:hover{
     transition: opacity 0.5s ease;
-    background-color: rgba(0,0,0,0.95); 
 }
 
-.skills-imagen.activo .texto-habilidad {
-    opacity: 0;
-    transform: scale(1);
-    cursor: pointer;
+.skills-imagen:hover .texto-habilidad {
+    opacity: 1; 
 }
 
-.texto-habilidad.activa {
-    opacity: 1;
-}
-
-/* Sección de Educación */
+/* ========================================= */
+/* ===== 7. SECCIÓN EDUCATION (Educación) ===== */
+/* ========================================= */
 #education {
-    position: relative;
-    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 250px; 
+    min-height: 90vh; 
 }
 
-/* Imagen de fondo */
+/* Imagen de fondo (Liceo) */
 .educacion-img {
     position: absolute;
     width: 100%;
-    height: 40%;
+    height: 250px; 
     object-fit: cover;
     opacity: 0.5; 
     z-index: 0;
+    top: 0;
+    left: 0;
 }
 
-/* Texto encima */
-#education h1 {
-    position: relative;
-    color: white;
-    font-size: 40px;
-    text-align: center;
-    z-index: 1;
-    margin-top: 60px;
-}
-
-/* Contenedor del texto principal */
+/* Título de la sección */
 .educacion-texto {
     position: absolute;
-    margin-right: 2%;
     text-align: center;
     color: white;
     z-index: 1;
+    top: 100px; 
 }
 
-.educacion-texto {
-    margin-top: 30px;
+/* Contenedor Flexbox para alinear imagen y texto (Requiere cambio en HTML) */
+.education-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 40px; 
+    gap: 40px; 
 }
 
-/* Imagen pequeña (centrada vertical en mini fondo, alineada a la izquierda) */
+/* Contenedor de la imagen (liceo) */
+.link-imagen {
+    position: relative; 
+    flex-shrink: 0; 
+    width: 250px; 
+}
+
 .img-educacion {
-    position: absolute;
-    margin-top: 23%;   
-    left: 5%; 
-    width: 210px;  
+    width: 100%;
     height: auto;
-    z-index: 1;
-    border-radius: 30px;
 }
 
-.img-hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+/* Imagen del liceo */
+.img-educacion {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 40px;
 }
 
-.img-hover:hover {
-    transform: scale(1.1); /* Zoom ligero al pasar el mouse */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Sombra suave */
+/* Efecto al pasar el mouse */
+.img-educacion:hover {
+    transform: scale(1.08); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
 }
 
-/* Contenedor del texto detallado */
+/* Bloque de texto de la educación */
 .educacion-texto2 {
-    margin-top: 25%; 
-    margin-left: 10%; 
-    max-width: 60%;
+    flex-grow: 1;
+    max-width: 700px;
+    text-align: left;
+    margin: 0; 
+    padding-top: 10px;
 }
 
 .educacion-texto2 h2 {
@@ -425,40 +438,56 @@ section:nth-child(even) {
     margin-bottom: 9px;
 }
 
-/* Sección de Educación */
+
+/* ========================================= */
+/* ===== 8. SECCIÓN EXPERIENCE (Experiencia) ===== */
+/* ========================================= */
 #experience {
-    position: relative;
-    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 250px; 
+    min-height: 90vh;
 }
 
+/* Imagen de fondo */
 .experiencia-img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 40%;
+    height: 250px; 
     object-fit: cover;
-    z-index: 1; 
+    z-index: 0; 
+    opacity: 0.6;
 }
 
-/* Contenedor del texto principal */
+/* Título de la sección */
 .experiencia-texto {
     position: absolute;
     text-align: center;
     color: white;
     z-index: 1;
+    top: 100px; 
 }
 
-.experiencia-texto {
-    margin-top: 100px;
+/* Contenedor principal del contenido (Texto a la izquierda, Imágenes a la derecha) */
+.contenedor-hijo-mayor {
+    display: flex;
+    flex-direction: row-reverse; /* Cambia el orden */
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 40px;
+    gap: 40px; 
 }
 
+/* Bloque de texto de experiencia */
 .experiencia-texto2 {
-    margin-top: 25%;   
+    flex: 1 1 400px;
+    max-width: 700px;
+    margin: 0; 
 }
 
 .experiencia-texto2 h2 {
@@ -470,84 +499,131 @@ section:nth-child(even) {
     margin-top: 30px;
 }
 
+/* Contenedor de las imágenes pequeñas/iconos */
 .experiencia-imagenes {
     display: flex;             
-    flex-direction: column;                                             
-    align-items: center;    
-    gap: 15px;  
-    margin-top: 400px;   
-    margin-inline: 60px;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 30px; 
+    margin: 20px 0;   
+    flex-shrink: 0;
+    max-width: 300px;
 }
 
+/* Transición de hover en las imágenes */
+.experiencia-imagenes a img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.experiencia-imagenes a:hover img {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4); 
+    cursor: pointer; 
+}
+
+/* Tamaños de imágenes */
+.img-experiencia1 {
+    width: 100px;
+    height: auto;           
+    border-radius: 10px;  
+}
 .img-experiencia2, .img-experiencia3 {
     width: 50px;       
     height: auto;           
     border-radius: 10px;   
 }
 
-.img-experiencia1{
-    width: 100px;
-    height: auto;           
-    border-radius: 10px;  
+/* ========================================= */
+/* ===== 9. SECCIÓN PORTAFOLIO ===== */
+/* ========================================= */
+#portafolio .container {
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
 }
 
-.contenedor-hijo-mayor{
+/* Fila principal de tarjetas de Bootstrap (Primeras 3) */
+#portafolio .row {
     display: flex;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; 
+    margin-top: 20px;
 }
 
-.experiencia-imagenes a img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.col {
+    /* Define el tamaño de la columna */
+    flex: 1 1 300px; 
+    max-width: 400px; 
+    margin-bottom: 30px; 
+    padding: 0; 
 }
 
-.experiencia-imagenes a img:hover {
-    transform: scale(1.1); 
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4); 
-    cursor: pointer; 
-}
-
-
-
+/* Contenedor de las dos tarjetas inferiores (personalizadas) */
 .tarjetas-portafolio {
     margin-top: 40px;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
-.tarjeta {
-    width: 400px; /* tamaño de cada tarjeta */
-    border-radius: 10px;
+/* Target de las tarjetas dentro del segundo contenedor */
+.tarjetas-portafolio .card.tarjeta {
+    flex: 1 1 300px;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
-.tarjeta:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
+/* Estilos comunes de la tarjeta y transición */
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
     border-radius: 10px; 
     cursor: pointer; 
+    height: 100%; 
+    width: 100%; 
 }
 
-/* Efecto hover */
 .card:hover {
     transform: scale(1.05); 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); 
 }
 
+/* ========================================= */
+/* ===== 10. SECCIÓN CONTACTO ===== */
+/* ========================================= */
+#contact {
+    min-height: 50vh;
+    overflow: hidden; 
+}
 
 .contenedor-contacto{
     width: 100%;
+    max-width: 100%;
+    text-align: center;
 }
+
+/* Tarjeta de contacto central */
 .tarjeta-contacto {
-    min-height: 200px;   /* Alto mínimo */
-    max-width: 600px;    /* Ancho máximo */
-    width: 100%;          /* Ancho relativo para móviles */
-    margin: 0 auto;      /* Centrar horizontalmente */
+    max-width: 600px;    
+    width: 90%;          
+    margin: 30px auto;      
+    min-height: 200px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 }
 
 .cuerpo-contacto {
-    padding: 30px 20px;  /* Separación interna */
+    padding: 30px 20px;
+}
+
+.texto-contacto {
+    list-style: none;
+    padding-left: 0;
 }
 
 .texto-final{
