@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  padding: 30px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2a5783;
+  margin-bottom: 20px;
+}
+
+/* ====== Pestañas ====== */
+.tabs {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  margin: 2px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.tab-button.active {
+  background-color: #2a5783;
+  color: white;
+}
+
+/* ====== Contenido ====== */
+.tab-content {
+  display: none;
+  background: #fff;
+  padding: 20px;
+  max-width: 450px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tab-content.active {
+  display: block;
+}
+
+form label, form div {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[type="submit"], #btnAgregar {
+  background-color: #4caf50;
+  color: white;
+}
+
+#btnPromedio {
+  background-color: #2196f3;
+  color: white;
+}
+
+#btnEliminar {
+  background-color: #ff9800;
+  color: white;
+}
+
+#btnLimpiarRegistro, #btnLimpiarNotas {
+  background-color: #f44336;
+  color: white;
+}
+
+.resultado {
+  color: #2e7d32;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.error {
+  color: #c62828;
+  font-weight: bold;
+  text-align: center;
+}
+
+.resumen {
+  text-align: center;
+  margin-top: 10px;
+  color: #1565c0;
+}
